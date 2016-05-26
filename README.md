@@ -10,6 +10,8 @@ src/passwordProtector/AlertDialog.java;
 
 src/passwordProtector/StageComposer.java.
 
+#########################################################################
+
 ![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Login_dialog_1.png)
 
 ![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Login_dialog_2.png)
