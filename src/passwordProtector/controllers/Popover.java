@@ -1,6 +1,5 @@
 package passwordProtector.controllers;
 
-import com.sun.jmx.snmp.SnmpOpaque;
 import javafx.animation.Animation;
 import javafx.animation.FadeTransition;
 import javafx.animation.ParallelTransition;
@@ -10,25 +9,16 @@ import javafx.beans.property.SimpleDoubleProperty;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Insets;
 import javafx.geometry.NodeOrientation;
 import javafx.geometry.Point2D;
-import javafx.scene.Node;
-import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Background;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Region;
-import javafx.scene.paint.Color;
 import javafx.util.Duration;
 import passwordProtector.Main;
-import passwordProtector.dataModel.Branch;
-import passwordProtector.dataModel.CustomTreeCell;
-import passwordProtector.dataModel.TreeViewWithItems;
 
 import java.io.IOException;
-import java.net.URL;
 
 public class Popover extends Region {
     private final Region frameBorder = new Region();
