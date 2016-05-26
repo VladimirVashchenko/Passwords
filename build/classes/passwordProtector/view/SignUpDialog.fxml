@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TextField fx:id="edit_sgnUpLogin" layoutX="125.0" layoutY="45.0" promptText="Назовите себя" />
+        <PasswordField fx:id="edit_sgnUpPass" layoutX="125.0" layoutY="80.0" promptText="Задайте пароль" />
+        <PasswordField fx:id="edit_sgnUpPassConfirm" layoutX="125.0" layoutY="115.0" promptText="Подтвердите пароль" />
+        <Button fx:id="btn_sgnUpOK" defaultButton="true" layoutX="182.0" layoutY="177.0" mnemonicParsing="false" style="-fx-padding: 2; -fx-min-width: 40;" text="ОК" />
+        <Button fx:id="btn_sgnUpCancel" cancelButton="true" layoutX="228.0" layoutY="177.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="42.0" style="-fx-padding: 2;" text="Назад" />
+        <Label layoutX="25.0" layoutY="49.0" text="Логин" />
+        <Label layoutX="25.0" layoutY="84.0" text="Пароль" />
+        <Label layoutX="25.0" layoutY="119.0" text="Пароль" />
+    </children>
+</AnchorPane>

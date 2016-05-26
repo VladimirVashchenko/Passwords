@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="pane_progress" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="100.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ProgressBar fx:id="progress_bar" layoutX="10.0" layoutY="36.0" prefWidth="300.0" progress="0.0" />
+      <Label fx:id="lbl_progressValue" layoutX="146.0" layoutY="17.0" text="Label" />
+      <Button fx:id="btn_progressFinish" layoutX="120.0" layoutY="64.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="80.0" text="Завершить" />
+   </children>
+</Pane>

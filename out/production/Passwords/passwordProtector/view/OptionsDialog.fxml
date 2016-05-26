@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button fx:id="btn_optionsNext" defaultButton="true" layoutX="123.0" layoutY="113.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="42.0" style="-fx-padding: 2;" text="Далее" />
+        <Button fx:id="btn_optionsCancel" cancelButton="true" layoutX="172.0" layoutY="113.0" mnemonicParsing="false" style="-fx-padding: 2;" text="Отмена" />
+      <CheckBox fx:id="check_changeLogin" layoutX="55.0" layoutY="54.0" mnemonicParsing="false" text="Изменить логин" />
+      <CheckBox fx:id="check_changePass" layoutX="55.0" layoutY="78.0" mnemonicParsing="false" text="Изменить пароль" />
+      <Label layoutX="40.0" layoutY="21.0" text="Выберите одну или несколько опций:" />
+    </children>
+</AnchorPane>

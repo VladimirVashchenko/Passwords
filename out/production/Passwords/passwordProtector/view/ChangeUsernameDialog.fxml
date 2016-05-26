@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TextField fx:id="edit_sgnUpLogin" layoutX="125.0" layoutY="45.0" promptText="Назовите себя" />
+        <Button fx:id="btn_sgnUpOK" defaultButton="true" layoutX="182.0" layoutY="177.0" mnemonicParsing="false" style="-fx-padding: 2; -fx-min-width: 40;" text="ОК" AnchorPane.bottomAnchor="27.0" AnchorPane.rightAnchor="98.0" />
+        <Button fx:id="btn_sgnUpCancel" cancelButton="true" layoutX="234.0" layoutY="177.0" mnemonicParsing="false" style="-fx-padding: 2;" text="Отмена" AnchorPane.bottomAnchor="27.0" AnchorPane.rightAnchor="40.0" />
+        <Label fx:id="lbl_username" layoutX="25.0" layoutY="49.0" text="Логин" />
+    </children>
+</AnchorPane>
