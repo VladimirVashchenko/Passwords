@@ -379,7 +379,7 @@ public class MainController implements Initializable {
                 if (!searchChild(MAP_BRANCHES.get(location), username)) {
                     listOfUsers.add(new User(username, location));
                     addUserToDB(location, username, password, otherData);
-                    StageComposer.setNotifier("success", null, "Данные успешно добавлены в базу.", Duration.millis(2000), 30, 230, 15, null);
+                    StageComposer.setNotifier("success", null, "Данные успешно добавлены в базу.", Duration.millis(2000), 30, 250, 15, null);
                 } else {
                     StageComposer.setNotifier("error", null, "Такой пользователь уже есть в \n" + location + ".", Duration.millis(2000), 60, 230, 15, null);
                 }
@@ -389,7 +389,7 @@ public class MainController implements Initializable {
                 newLocationUser(location);
                 listOfUsers.add(new User(username, location));
                 addUserToDB(location, username, password, otherData);
-                StageComposer.setNotifier("success", null, "Данные успешно добавлены в базу.", Duration.millis(2000), 30, 230, 15, null);
+                StageComposer.setNotifier("success", null, "Данные успешно добавлены в базу.", Duration.millis(2000), 30, 250, 15, null);
             }
             selectTreeItem(location);
             return true;
@@ -414,15 +414,22 @@ public class MainController implements Initializable {
     }
 
     private void addUserToDB(String location, String username, String password, String otherData) {
-        try {
-            if (!otherData.isEmpty()) {
-                db.addUserToDB(location, username, AESEncryption.getEncrypted(password, keyWord.getKey()), AESEncryption.getEncrypted(otherData, keyWord.getKey()));
-            } else {
-                db.addUserToDB(location, username, AESEncryption.getEncrypted(password, keyWord.getKey()));
+        Runnable task = () -> {
+            String[] processed = dispatcher.perform(
+                    new EncryptionTask(password, keyWord.getKey()),
+                    !otherData.isEmpty() ? new EncryptionTask(otherData, keyWord.getKey()) : null);
+
+            try {
+                if (!otherData.isEmpty()) {
+                    db.addUserToDB(location, username, processed[0],  processed[1]);
+                } else {
+                    db.addUserToDB(location, username, processed[0]);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        };
+        eventExService.execute(task);
     }
 
     /**
