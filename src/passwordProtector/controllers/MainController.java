@@ -154,10 +154,10 @@ public class MainController implements Initializable {
         /*
          * Tooltips
          */
-        tt_context =makeToolTip("Правый клик - для вызова\nконтекстного меню.");
-        tt_copy =makeToolTip("Копировать в буфер обмена");
-        tt_save =makeToolTip("Сохранить изменения в базе данных");
-        tt_search =makeToolTip("Начните ввод.");
+        tt_context = makeToolTip("Правый клик - для вызова\nконтекстного меню.");
+        tt_copy = makeToolTip("Копировать в буфер обмена");
+        tt_save = makeToolTip("Сохранить изменения в базе данных");
+        tt_search = makeToolTip("Начните ввод.");
 
         btn_usernameCopy.setTooltip(tt_copy);
         btn_passwordCopy.setTooltip(tt_copy);
@@ -421,7 +421,7 @@ public class MainController implements Initializable {
 
             try {
                 if (!otherData.isEmpty()) {
-                    db.addUserToDB(location, username, processed[0],  processed[1]);
+                    db.addUserToDB(location, username, processed[0], processed[1]);
                 } else {
                     db.addUserToDB(location, username, processed[0]);
                 }
@@ -490,11 +490,16 @@ public class MainController implements Initializable {
         TreeItem<Branch> location = username.getParent();
 
         if (!edit_passwordMain.getText().isEmpty() && !edit_passwordMain.getText().matches(".*\\s+.*")) {
-            try {
-                db.updatePassword(location.getValue().getName(), username.getValue().getName(), AESEncryption.getEncrypted(edit_passwordMain.getText(), keyWord.getKey()));
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            Runnable task = () -> {
+                try {
+                    db.updatePassword(location.getValue().getName(), username.getValue().getName(),
+                            dispatcher.perform(new EncryptionTask(edit_passwordMain.getText(), keyWord.getKey()))[0]);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            };
+            eventExService.execute(task);
+
             tempPassword = edit_passwordMain.getText();
             StageComposer.setNotifier("success", null, "Новый пароль сохранён в базу.", Duration.millis(2000), 30, 230, 15, null);
         } else {
@@ -530,20 +535,26 @@ public class MainController implements Initializable {
                 if (tempOtherData.isEmpty()) {
                     // было пустым
                     if (AlertDialog.alert(primaryStage, "Сохранение изменений", "Сохранить изменения?", "warning")) {
-                        try {
-                            db.addOtherDataToDB(location, username, AESEncryption.getEncrypted(newOtherData, keyWord.getKey()));
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
+                        Runnable task = () -> {
+                            try {
+                                db.addOtherDataToDB(location, username, dispatcher.perform(new EncryptionTask(newOtherData, keyWord.getKey()))[0]/*AESEncryption.getEncrypted(newOtherData, keyWord.getKey())*/);
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                        };
+                        eventExService.execute(task);
                     }
                 } else {
                     // было не пустым
                     if (AlertDialog.alert(primaryStage, "Сохранение изменений", "Сохранить изменения?", "warning")) {
-                        try {
-                            db.updateOtherData(location, username, AESEncryption.getEncrypted(newOtherData, keyWord.getKey()));
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
+                        Runnable task = () -> {
+                            try {
+                                db.updateOtherData(location, username, dispatcher.perform(new EncryptionTask(newOtherData, keyWord.getKey()))[0]/*AESEncryption.getEncrypted(newOtherData, keyWord.getKey())*/);
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                        };
+                        eventExService.execute(task);
                     }
                 }
             }
@@ -702,8 +713,8 @@ public class MainController implements Initializable {
             treeView.scrollTo(treeView.getFocusModel().focusedIndexProperty().getValue());
         });*/
 
-        for(TreeItem<Branch> branchToSelect: treeView.getRoot().getChildren()){
-            if (branchToSelect.getValue().getName().toLowerCase().startsWith(location.toLowerCase())){
+        for (TreeItem<Branch> branchToSelect : treeView.getRoot().getChildren()) {
+            if (branchToSelect.getValue().getName().toLowerCase().startsWith(location.toLowerCase())) {
                 treeView.getSelectionModel().select(branchToSelect);
                 treeView.getFocusModel().focus(treeView.getSelectionModel().getSelectedIndex());
                 treeView.scrollTo(treeView.getFocusModel().focusedIndexProperty().getValue());
