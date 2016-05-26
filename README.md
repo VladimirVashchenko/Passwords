@@ -7,4 +7,20 @@ src/passwordProtector/controllers/Popover.java;
 src/passwordProtector/AlertDialog.java;
 src/passwordProtector/StageComposer.java.
 
-![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Login_dialog_1.png "Login dialog")
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Login_dialog_1.png "Login dialog 1")
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Login_dialog_2.png "Login dialog 2")
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Login_dialog_3.png "Login dialog 3")
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_1.png "Main 1")
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_2.png "Main 2")
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_3.png)
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_4.png)
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_5.png)
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_6.png)
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_7.png)
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_8.png)
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_9.png)
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_10.png)
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_menu_1.png)
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_menu_2.png)
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_menu_3.png)
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Sign_up_dialog.png)
