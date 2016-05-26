@@ -4517,7 +4517,7 @@ to the top and bottom -fx-padding values of the parent toolbar. */
 
 .toggle-eye {
     /* TODO:*/
-    -fx-background-color: white;
+    -fx-background-color: -fx-control-inner-background;
     -fx-background-image: url('../img/closedEye.png');
     -fx-background-size: 1.7em;
     -fx-background-repeat: no-repeat;
@@ -4527,18 +4527,18 @@ to the top and bottom -fx-padding values of the parent toolbar. */
 }
 
 .toggle-eye:hover {
-    -fx-color: white;
+    -fx-color: -fx-control-inner-background;
     -fx-background-insets: 0, 0, 0, 0;
     -fx-background-radius: 0, 0, 0, 0;
 }
 
 .toggle-eye:armed {
-    -fx-color: white;
+    -fx-color: -fx-control-inner-background;
     -fx-background-insets: 0, 0, 0, 0;
     -fx-background-radius: 0, 0, 0, 0;
 }
 .toggle-eye:selected{
-    -fx-background-color: white;
+    -fx-background-color: -fx-control-inner-background;
     -fx-background-image: url('../img/openEye.png');
     -fx-background-size: 1.7em;
     -fx-background-repeat: no-repeat;
@@ -4549,14 +4549,14 @@ to the top and bottom -fx-padding values of the parent toolbar. */
 
 
 .toggle-eye:selected:focused {
-    -fx-color: white;
+    -fx-color: -fx-control-inner-background;
     -fx-background-color: white;
     -fx-background-insets: 0, 0, 0, 0;
     -fx-background-radius: 0, 0, 0, 0;
 }
 
 .toggle-eye:focused {
-    -fx-color: white;
+    -fx-color: -fx-control-inner-background;
     -fx-background-color: white;
     -fx-background-insets: 0, 0, 0, 0;
     -fx-background-radius: 0, 0, 0, 0;
