@@ -8,17 +8,12 @@ import javafx.scene.control.TextField;
 class CustomSkin extends TextFieldSkin {
 
     private static final BooleanProperty MASK_PROPERTY = new SimpleBooleanProperty(false);
-
-    public CustomSkin(TextField textField) {
+    public CustomSkin(final TextField textField) {
         super(textField);
     }
 
-    public void bindMaskProperty(BooleanProperty other){
-        MASK_PROPERTY.bind(other);
-    }
-
-    public void unbindMaskProperty(){
-        MASK_PROPERTY.unbind();
+    public BooleanProperty getMaskProperty(){
+        return MASK_PROPERTY;
     }
 
     @Override
