@@ -4,6 +4,7 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.scene.AccessibleRole;
 import javafx.scene.Cursor;
+import javafx.scene.control.Skin;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.image.Image;
@@ -23,23 +24,10 @@ public class CustomTextField extends TextField implements ChangeListener<String>
         toggleButton.setManaged(false);
         toggleButton.setVisible(false);
 
-        customSkin = new CustomSkin(this);
-        setSkin(customSkin);
-
-        customSkin.bindMaskProperty(toggleButton.selectedProperty());
-        toggleButton.selectedProperty().addListener(((observable, oldValue, newValue) -> setRole(newValue)));
         toggleButton.setOnAction(event -> {
             setText(textProperty().getValue());
             end();
         });
-    }
-
-    private void setRole(boolean b){
-        if(b){
-            setAccessibleRole(AccessibleRole.TEXT_FIELD);
-        } else {
-            setAccessibleRole(AccessibleRole.PASSWORD_FIELD);
-        }
     }
 
     @Override
@@ -50,6 +38,13 @@ public class CustomTextField extends TextField implements ChangeListener<String>
         toggleButton.setLayoutX(getWidth() - (toggleButton.getWidth()*1.1));
         toggleButton.setLayoutY(getHeight()/2 - toggleButton.getHeight()/2);
         setStyle("-fx-padding: 0.25em " + getHeight() + "  0.333333em 0.416667em;");
+    }
+
+    @Override
+    protected Skin<?> createDefaultSkin() {
+        customSkin = new CustomSkin(this);
+        customSkin.getMaskProperty().bind(toggleButton.selectedProperty());
+        return customSkin;
     }
 
     @Override
