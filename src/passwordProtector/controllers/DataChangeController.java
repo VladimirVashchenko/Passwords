@@ -106,7 +106,7 @@ public class DataChangeController implements Initializable {
 
                                 db.changePublicUserData(oldUsername, newUsername, newPasswordHashed, newSalt);
 
-                                deleteFile(path, oldUsername);
+                                Helper.deleteFile(path, oldUsername);
                                 reconnect(newUsername);
 
                                 stage.close();
@@ -161,7 +161,7 @@ public class DataChangeController implements Initializable {
 
                             db.changePublicUsername(oldUsername, newUsername, newSalt);
 
-                            deleteFile(path, oldUsername);
+                            Helper.deleteFile(path, oldUsername);
                             reconnect(newUsername);
                             stage.close();
 
@@ -346,7 +346,7 @@ public class DataChangeController implements Initializable {
         File to = new File(pathTemp + dest + ".db");
 
         if (tempFolder.exists()) {
-            deleteDirectory(tempFolder);
+            Helper.deleteDirectory(tempFolder);
         }
         if (tempFolder.mkdir()) {
             Files.copy(from.toPath(), to.toPath(), StandardCopyOption.COPY_ATTRIBUTES);
@@ -358,31 +358,10 @@ public class DataChangeController implements Initializable {
         File to = new File(path + dest + ".db");
         Files.move(from.toPath(), to.toPath(), StandardCopyOption.REPLACE_EXISTING, StandardCopyOption.ATOMIC_MOVE);
 
-        deleteDirectory(tempFolder);
+        Helper.deleteDirectory(tempFolder);
     }
 
-    private boolean deleteFile(String path, String name) {
-        File file = new File(path + name + ".db");
 
-        return file.exists() && file.delete();
-    }
-
-    private static boolean deleteDirectory(File dir) {
-        if (!dir.exists() || !dir.isDirectory()) {
-            return false;
-        }
-
-        String[] files = dir.list();
-        for (String file : files) {
-            File f = new File(dir, file);
-            if (f.isDirectory()) {
-                deleteDirectory(f);
-            } else {
-                f.delete();
-            }
-        }
-        return dir.delete();
-    }
 
     private void cancel(ActionEvent actionEvent) {
         Notification.Notifier.setPopupLocation(primaryStage, Pos.BOTTOM_CENTER);
