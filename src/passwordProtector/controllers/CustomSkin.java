@@ -86,7 +86,7 @@ class CustomSkin extends TextFieldSkin {
         openEye.getChildren().addAll(path1);
         closedEye.getChildren().addAll(path2);
 
-        toggleButton.setGraphic(closedEye);
+        //toggleButton.setGraphic(closedEye);
         toggleButton.setFocusTraversable(false);
 
         toggleButton.selectedProperty().addListener((observable1, oldValue, newValue) -> {
@@ -106,7 +106,8 @@ class CustomSkin extends TextFieldSkin {
 
     @Override
     protected String maskText(String txt) {
-        if (getSkinnable() instanceof PasswordField && !toggleButton.selectedProperty().get()) {
+        if (!toggleButton.selectedProperty().get() && getSkinnable() instanceof PasswordField) {
+            toggleButton.setGraphic(closedEye);
             int n = txt.length();
             StringBuilder passwordBuilder = new StringBuilder(n);
             for (int i = 0; i < n; i++) {
@@ -115,6 +116,7 @@ class CustomSkin extends TextFieldSkin {
 
             return passwordBuilder.toString();
         } else {
+            toggleButton.setGraphic(openEye);
             return txt;
         }
     }
@@ -127,7 +129,6 @@ class CustomSkin extends TextFieldSkin {
             toggleButton.resize(snapSize(openEye.prefWidth(-1)), h);
             textField.setStyle("-fx-padding: 0.25em " + (h + 10) + "  0.333333em 0.416667em;");
         }
-
         positionInArea(toggleButton, textField.getWidth() - toggleButton.getWidth() - 3, y, snapSize(openEye.prefWidth(-1)), h, 0, HPos.CENTER, VPos.CENTER);
     }
 
