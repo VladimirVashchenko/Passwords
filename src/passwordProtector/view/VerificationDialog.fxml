@@ -4,11 +4,12 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import passwordProtector.controllers.CustomTextField ?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <TextField fx:id="edit_verifyLogin" layoutX="125.0" layoutY="32.0" promptText="Введите старый логин" />
-        <PasswordField fx:id="edit_verifyPass" layoutX="125.0" layoutY="67.0" promptText="и старый пароль" />
+        <CustomTextField fx:id="edit_verifyPass" layoutX="125.0" layoutY="67.0" promptText="и старый пароль" />
         <Button fx:id="btn_verifyOk" defaultButton="true" layoutX="123.0" layoutY="112.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="42.0" style="-fx-padding: 2;" text="Ok" />
         <Button fx:id="btn_verifyCancel" cancelButton="true" layoutX="172.0" layoutY="112.0" mnemonicParsing="false" style="-fx-padding: 2;" text="Отмена" />
         <Label layoutX="25.0" layoutY="36.0" text="Логин" />
