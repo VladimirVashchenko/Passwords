@@ -1,5 +1,6 @@
 package passwordProtector;
 
+import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 
@@ -18,5 +19,28 @@ public class Helper {
         decodedPath = decodedPath.substring(0, decodedPath.lastIndexOf("/")+1);
 
         return decodedPath;
+    }
+
+    public static boolean deleteFile(String path, String name) {
+        File file = new File(path + name + ".db");
+
+        return file.exists() && file.delete();
+    }
+
+    public static boolean deleteDirectory(File dir) {
+        if (!dir.exists() || !dir.isDirectory()) {
+            return false;
+        }
+
+        String[] files = dir.list();
+        for (String file : files) {
+            File f = new File(dir, file);
+            if (f.isDirectory()) {
+                deleteDirectory(f);
+            } else {
+                f.delete();
+            }
+        }
+        return dir.delete();
     }
 }
