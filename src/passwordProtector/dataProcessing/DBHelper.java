@@ -337,6 +337,10 @@ public class DBHelper {
         return salt;
     }
 
+    public void deletePublicAccount(String name){
+        String statement = "DELETE FROM users WHERE username = ?";
+        prepareOneParameter(statement, connectionPublic, name);
+    }
     /***************
      * Update data
      ********************/
@@ -387,67 +391,7 @@ public class DBHelper {
         prepareThreeParameters(statement, connectionPublic, newPassword, newSalt, oldUsername);
     }
 
-    private void prepareOneParameter(String sql, Connection connection, String first) {
-        PreparedStatement statement = null;
-        try {
-            statement = connection.prepareStatement(sql);
-            statement.setString(1, first);
-            statement.executeUpdate();
-            connection.commit();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            closeStatement(statement);
-        }
-    }
 
-    private void prepareTwoParameters(String sql, Connection connection, String first, String second) {
-        PreparedStatement statement = null;
-        try {
-            statement = connection.prepareStatement(sql);
-            statement.setString(1, first);
-            statement.setString(2, second);
-            statement.executeUpdate();
-            connection.commit();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            closeStatement(statement);
-        }
-    }
-
-    private void prepareThreeParameters(String sql, Connection connection, String first, String second, String third) {
-        PreparedStatement statement = null;
-        try {
-            statement = connection.prepareStatement(sql);
-            statement.setString(1, first);
-            statement.setString(2, second);
-            statement.setString(3, third);
-            statement.executeUpdate();
-            connection.commit();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            closeStatement(statement);
-        }
-    }
-
-    private void prepareFourParameters(String sql, Connection connection, String first, String second, String third, String fourth) {
-        PreparedStatement statement = null;
-        try {
-            statement = connection.prepareStatement(sql);
-            statement.setString(1, first);
-            statement.setString(2, second);
-            statement.setString(3, third);
-            statement.setString(4, fourth);
-            statement.executeUpdate();
-            connection.commit();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            closeStatement(statement);
-        }
-    }
 
     public void updateReEncrypted(ArrayList<DBUser> list) {
         PreparedStatement statementPass = null;
@@ -590,6 +534,67 @@ public class DBHelper {
         }
     }
 
+    private void prepareOneParameter(String sql, Connection connection, String first) {
+        PreparedStatement statement = null;
+        try {
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, first);
+            statement.executeUpdate();
+            connection.commit();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeStatement(statement);
+        }
+    }
+
+    private void prepareTwoParameters(String sql, Connection connection, String first, String second) {
+        PreparedStatement statement = null;
+        try {
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, first);
+            statement.setString(2, second);
+            statement.executeUpdate();
+            connection.commit();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeStatement(statement);
+        }
+    }
+
+    private void prepareThreeParameters(String sql, Connection connection, String first, String second, String third) {
+        PreparedStatement statement = null;
+        try {
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, first);
+            statement.setString(2, second);
+            statement.setString(3, third);
+            statement.executeUpdate();
+            connection.commit();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeStatement(statement);
+        }
+    }
+
+    private void prepareFourParameters(String sql, Connection connection, String first, String second, String third, String fourth) {
+        PreparedStatement statement = null;
+        try {
+            statement = connection.prepareStatement(sql);
+            statement.setString(1, first);
+            statement.setString(2, second);
+            statement.setString(3, third);
+            statement.setString(4, fourth);
+            statement.executeUpdate();
+            connection.commit();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            closeStatement(statement);
+        }
+    }
     @Override
     public Object clone()
             throws CloneNotSupportedException {

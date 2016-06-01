@@ -734,7 +734,7 @@ public class MainController implements Initializable {
     private void handleLogPassChangeMenu() throws IOException {
         Stage stage = new Stage(StageStyle.UNIFIED);
         VerificationController vc = new VerificationController(stage, primaryStage);
-        vc.setMainController(this);
+        vc.setMain(main);
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/VerificationDialog.fxml"));
 
@@ -775,7 +775,7 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    private void handleSignOff() throws IOException {
+    protected void handleSignOff() throws IOException {
         db.disconnectFromPrivateDB();
         primaryStage.hide();
         main.loadAuthentication();

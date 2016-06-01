@@ -45,7 +45,7 @@
                                        <topInput>
                                           <ColorAdjust brightness="-0.21" contrast="0.23" hue="0.53" saturation="1.0">
                                              <input>
-                                                <Glow level="1.0" />
+                                                <Glow level="0.22" />
                                              </input>
                                           </ColorAdjust>
                                        </topInput>
