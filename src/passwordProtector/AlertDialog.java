@@ -65,17 +65,9 @@ public class AlertDialog {
                 top.getChildren().addAll(warning, txtFlow);
                 break;
             case "recyclebin":
-                /*Image image = new Image(AlertDialog.class.getResourceAsStream("img/" + icon + ".png"));
-                ImageView imageView = new ImageView();
-                imageView.setImage(image);
-                imageView.setFitWidth(50);
-                imageView.setFitHeight(50);*/
-
                 Group recycleBin = Icons.getInstance().getRecycleBin();
-
-
-                HBox.setMargin(/*imageView*/recycleBin, new Insets(30, 0, 10, 20));
-                top.getChildren().addAll(/*imageView*/recycleBin, txtFlow);
+                HBox.setMargin(recycleBin, new Insets(30, 0, 10, 20));
+                top.getChildren().addAll(recycleBin, txtFlow);
                 break;
         }
 
@@ -91,7 +83,7 @@ public class AlertDialog {
             stage.close();
         });
 
-        scene.getStylesheets().add(Main.class.getResource("css/caspian.css").toExternalForm());
+        scene.getStylesheets().add(Main.class.getResource("css/caspian.bss").toExternalForm());
         stage.setMinWidth(330);
         stage.setMinHeight(165);
         stage.setTitle(title);
