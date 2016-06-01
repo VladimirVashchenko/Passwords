@@ -17,7 +17,6 @@ import javafx.scene.input.ClipboardContent;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
@@ -43,9 +42,7 @@ public class MainController implements Initializable {
     @FXML
     private AnchorPane treePane, rightPane, pane_main, footer, middlePane;
     @FXML
-    private Pane pane_otherData, pane_addDataPop;
-    @FXML
-    private Button btn_usernameCopy, btn_passwordCopy, btn_addData, btn_verifyOk, btn_verifyCancel, btn_saveOtherData;
+    private Button btn_usernameCopy, btn_passwordCopy, btn_saveOtherData;
     @FXML
     private ToggleButton tgl_test;
     @FXML
@@ -737,7 +734,7 @@ public class MainController implements Initializable {
     private void handleLogPassChangeMenu() throws IOException {
         Stage stage = new Stage(StageStyle.UNIFIED);
         VerificationController vc = new VerificationController(stage, primaryStage);
-        vc.setMainController(this);
+        vc.setMain(main);
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/VerificationDialog.fxml"));
 
@@ -778,7 +775,7 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    private void handleSignOff() throws IOException {
+    protected void handleSignOff() throws IOException {
         db.disconnectFromPrivateDB();
         primaryStage.hide();
         main.loadAuthentication();

@@ -17,7 +17,7 @@
                  <menus>
                   <Menu mnemonicParsing="false" text="Профиль">
                     <items>
-                      <MenuItem mnemonicParsing="false" onAction="#handleLogPassChangeMenu" text="Изменить логин/пароль" />
+                      <MenuItem mnemonicParsing="false" onAction="#handleLogPassChangeMenu" text="Управление аккаунтом" />
                     </items>
                   </Menu>
                      <Menu mnemonicParsing="false" text="Выход">
@@ -54,10 +54,7 @@
                                     <TextField fx:id="edit_usernameMain" editable="false" layoutX="98.0" layoutY="28.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="200.0" />
                                     <Button fx:id="btn_usernameCopy" layoutX="10.0" layoutY="29.0" mnemonicParsing="false" onAction="#copyUsername" text="Копировать" />
                                     <Button fx:id="btn_passwordCopy" layoutX="10.0" layoutY="68.0" mnemonicParsing="false" onAction="#copyPassword" text="Копировать" />
-                                    <Pane fx:id="pane_otherData" layoutX="98.0" layoutY="106.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="80.0" prefWidth="200.0">
-                                        <children>
-                                            <TextArea fx:id="txt_otherData" prefHeight="80.0" prefWidth="200.0" />
-                                        </children></Pane>
+                                    <TextArea fx:id="txt_otherData" layoutX="98.0" layoutY="109.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="80.0" prefWidth="200.0" />
                                     <Label fx:id="lbl_other" layoutX="305.0" layoutY="131.0" text="Другие" />
                                     <Label fx:id="lbl_data" layoutX="305.0" layoutY="149.0" text="данные" />
                                     <Button fx:id="btn_saveOtherData" layoutX="10.0" layoutY="162.0" mnemonicParsing="false" prefWidth="82.0" text="Сохранить" />

@@ -4514,3 +4514,44 @@ to the top and bottom -fx-padding values of the parent toolbar. */
     -fx-background-color: linear-gradient(from 100% 100% to -50% -50%, #4e71a6 0%, #192133 50%);
     -fx-opacity: 0.9;
 }
+
+.remove-user {
+    -fx-background-color: /*-fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border,*/ white;
+    /*-fx-background-insets: 0 0 -1 0, 0, 1, 2;*/
+    -fx-background-radius: 50, 50, 50, 50;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+
+.remove-user:focused {
+    -fx-color: -fx-focused-base;
+    -fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: -0.8, 0, 0, 0.8;
+    -fx-background-radius: 40, 40, 40, 40;
+}
+
+.remove-user:hover {
+    -fx-color: -fx-hover-base;
+}
+
+.remove-user:armed {
+    -fx-color: -fx-pressed-base;
+    -fx-background-color: /*-fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color*/white;
+}
+
+.remove-user:default {
+    -fx-base: #4067c1;
+}
+
+.remove-user:cancel {
+}
+
+.remove-user:disabled {
+    -fx-opacity: -fx-disabled-opacity;
+}
+
+.remove-user:show-mnemonics > .mnemonic-underline {
+    -fx-stroke: -fx-text-fill;
+}
