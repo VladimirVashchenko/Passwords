@@ -132,7 +132,7 @@ public class MainController implements Initializable {
                 popover.show(() -> tgl_test.setSelected(false));
                 AnchorPane.setRightAnchor(popover, AnchorPane.getRightAnchor(tgl_test));
                 AnchorPane.setBottomAnchor(popover, AnchorPane.getBottomAnchor(tgl_test));
-                StageComposer.setNotifier("info", null, "Для автоматической подстановки, \nвыделите сервис или пользователя.", Duration.millis(4500), 60, 250, 15, null);
+                StageComposer.setNotifier("info", null, "Для автоматической подстановки, \nвыделите сервис или пользователя.", Duration.millis(4500), 60, 260, 15, null);
             }
         });
 
@@ -376,7 +376,7 @@ public class MainController implements Initializable {
                 if (!searchChild(MAP_BRANCHES.get(location), username)) {
                     listOfUsers.add(new User(username, location));
                     addUserToDB(location, username, password, otherData);
-                    StageComposer.setNotifier("success", null, "Данные успешно добавлены в базу.", Duration.millis(2000), 30, 250, 15, null);
+                    StageComposer.setNotifier("success", null, "Данные успешно добавлены в базу.", Duration.millis(2000), 30, 260, 15, null);
                 } else {
                     StageComposer.setNotifier("error", null, "Такой пользователь уже есть в \n" + location + ".", Duration.millis(2000), 60, 230, 15, null);
                 }
@@ -386,7 +386,7 @@ public class MainController implements Initializable {
                 newLocationUser(location);
                 listOfUsers.add(new User(username, location));
                 addUserToDB(location, username, password, otherData);
-                StageComposer.setNotifier("success", null, "Данные успешно добавлены в базу.", Duration.millis(2000), 30, 250, 15, null);
+                StageComposer.setNotifier("success", null, "Данные успешно добавлены в базу.", Duration.millis(2000), 30, 260, 15, null);
             }
             selectTreeItem(location);
             return true;
@@ -468,7 +468,9 @@ public class MainController implements Initializable {
                         MAP_USERS.put(selectedUser.toString(), selectedUser);
 
                         db.updateUsername(selectedUser.getLocation(), tempUsername, newUsername);
-                        StageComposer.setNotifier("success", null, "Новое имя пользователя сохранено в базу.", Duration.millis(2000), 30, 240, 15, null);
+                        edit_usernameMain.setText(newUsername);
+
+                        StageComposer.setNotifier("success", null, "Новое имя пользователя \nсохранено в базу.", Duration.millis(2000), 60, 230, 15, null);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -483,22 +485,25 @@ public class MainController implements Initializable {
     }
 
     private void savePassword() {
+
         TreeItem<Branch> username = treeView.getSelectionModel().getSelectedItem();
         TreeItem<Branch> location = username.getParent();
 
         if (!edit_passwordMain.getText().isEmpty() && !edit_passwordMain.getText().matches(".*\\s+.*")) {
-            Runnable task = () -> {
-                try {
-                    db.updatePassword(location.getValue().getName(), username.getValue().getName(),
-                            dispatcher.perform(new EncryptionTask(edit_passwordMain.getText(), keyWord.getKey()))[0]);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            };
-            eventExService.execute(task);
+            if (AlertDialog.alert(primaryStage, "Сохранение изменений", "Сохранить изменения?", "warning")) {
+                Runnable task = () -> {
+                    try {
+                        db.updatePassword(location.getValue().getName(), username.getValue().getName(),
+                                dispatcher.perform(new EncryptionTask(edit_passwordMain.getText(), keyWord.getKey()))[0]);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                };
+                eventExService.execute(task);
 
-            tempPassword = edit_passwordMain.getText();
-            StageComposer.setNotifier("success", null, "Новый пароль сохранён в базу.", Duration.millis(2000), 30, 230, 15, null);
+                tempPassword = edit_passwordMain.getText();
+                StageComposer.setNotifier("success", null, "Новый пароль сохранён в базу.", Duration.millis(2000), 30, 230, 15, null);
+            }
         } else {
             edit_passwordMain.setText(tempPassword);
             StageComposer.setNotifier("warning", null, "Нельзя оставлять пустым!", Duration.millis(2000), 30, 230, 15, null);
@@ -514,7 +519,6 @@ public class MainController implements Initializable {
 
         String newOtherData = txt_otherData.getText().trim();
 
-
         if (newOtherData.equals(tempOtherData)) {
             // не изменилось
             StageComposer.setNotifier("warning", null, "Ничего не изменилось.", Duration.millis(2000), 30, 170, 15, null);
@@ -526,6 +530,7 @@ public class MainController implements Initializable {
                 if (AlertDialog.alert(primaryStage, "Удаление", "Очистить данные?", "warning")) {
                     db.deleteOtherData(location, username);
                     txt_otherData.setText("");
+                    StageComposer.setNotifier("success", null, "Изменения сохранены.", Duration.millis(2000), 30, 230, 15, null);
                 }
             } else {
                 // стало не пустым
@@ -540,6 +545,7 @@ public class MainController implements Initializable {
                             }
                         };
                         eventExService.execute(task);
+                        StageComposer.setNotifier("success", null, "Изменения сохранены.", Duration.millis(2000), 30, 230, 15, null);
                     }
                 } else {
                     // было не пустым
@@ -552,10 +558,10 @@ public class MainController implements Initializable {
                             }
                         };
                         eventExService.execute(task);
+                        StageComposer.setNotifier("success", null, "Изменения сохранены.", Duration.millis(2000), 30, 230, 15, null);
                     }
                 }
             }
-            StageComposer.setNotifier("success", null, "Изменения сохранены.", Duration.millis(2000), 30, 230, 15, null);
         }
         tempOtherData = newOtherData;
 
