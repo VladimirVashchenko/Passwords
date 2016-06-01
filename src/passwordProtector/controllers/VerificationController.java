@@ -1,5 +1,6 @@
 package passwordProtector.controllers;
 
+import javafx.animation.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,6 +11,7 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.shape.SVGPath;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import passwordProtector.dataProcessing.DBHelper;
@@ -35,6 +37,14 @@ public class VerificationController implements Initializable {
     PasswordField edit_verifyPass;
     @FXML
     CheckBox check_changeLogin, check_changePass;
+
+    @FXML
+    SVGPath svg_background;
+    @FXML
+    Button btn_deleteAccount;
+    private final Timeline timeline = new Timeline();
+
+
     private String oldUsername, oldPassword;
     private MainController mainController;
     private final static DBHelper db = DBHelper.getInstance();
@@ -66,10 +76,10 @@ public class VerificationController implements Initializable {
             if (keyWord.getUser().equals(username) && let_in) {
                 loadOptionsPanel();
             } else {
-                StageComposer.setNotifier("error", null, "Проверьте данные", Duration.millis(1500), 30, 180, stage.getMaxHeight()-60, null);
+                StageComposer.setNotifier("error", null, "Проверьте данные", Duration.millis(1500), 30, 180, stage.getMaxHeight() - 60, null);
             }
         } else {
-            StageComposer.setNotifier("warning", null, "Заполните все поля", Duration.millis(1500), 30, 180, stage.getMaxHeight()-60, null);
+            StageComposer.setNotifier("warning", null, "Заполните все поля", Duration.millis(1500), 30, 180, stage.getMaxHeight() - 60, null);
         }
     }
 
@@ -84,8 +94,61 @@ public class VerificationController implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        StageComposer.setUpStage(stage, rootLayout, "", 320, 320, 200, 200);
+        StageComposer.setUpStage(stage, rootLayout, "", 420, 420, 200, 200);
+        Interpolator rectInterpolator = new Interpolator() {
+            private static final double S1 = -25.0 / 9.0;
+            private static final double S2 = 50.0 / 9.0;
+            private static final double S3 = -16.0 / 9.0;
+            private static final double S4 = 10.0 / 9.0;
 
+            @Override
+            protected double curve(double t) {
+                // See the SMIL 3.1 specification for details on this calculation
+                // acceleration = 0.2, deceleration = 0.2
+                //return clamp((t < 0.1) ? 3.125 * t * t : (t > 0.7) ? -3.125 * t * t + 6.25 * t - 2.125 /*sin(x+0.6)*3-2.164*/ : 1.25 * t - 0.125);
+                return clamp((t > 0.8) ? S1 * t * t + S2 * t + S3 : S4 * t);
+            }
+
+            private double clamp(double t) {
+                return (t < 0.0) ? 0.0 : (t > 1.0) ? 1.0 : t;
+            }
+
+        };
+
+
+        KeyValue rectKeyValue = new KeyValue(svg_background.rotateProperty(), -720, /*rectInterpolator*/Interpolator.LINEAR);
+        //create a keyFrame with duration 4s
+        KeyFrame rectKeyFrame = new KeyFrame(Duration.seconds(0.6), rectKeyValue);
+        //add the keyframe to the timeline
+        timeline.getKeyFrames().add(rectKeyFrame);
+        Timeline timeline1 = new Timeline();
+
+        KeyValue rectKeyValue1 = new KeyValue(svg_background.rotateProperty(), -720, Interpolator.EASE_OUT);
+        //create a keyFrame with duration 4s
+        KeyFrame rectKeyFrame1 = new KeyFrame(Duration.seconds(0.6), rectKeyValue1);
+        //add the keyframe to the timeline
+
+        KeyFrame moveBall = new KeyFrame(Duration.seconds(0.6),
+                event -> {
+                    //timeline.getKeyFrames().add(rectKeyFrame);
+                    //timeline.pause();
+                    //timeline.playFrom(Duration.seconds(0));
+                    svg_background.setRotate(0);
+                    //timeline1.play();
+                });
+
+        AnimationTimer timer = new AnimationTimer() {
+            @Override
+            public void handle(long now) {
+                svg_background.rotateProperty().set(now++);
+
+                stop();
+            }
+        };
+
+        timeline1.getKeyFrames().add(rectKeyFrame1);
+        timeline.getKeyFrames().add(moveBall);
+        btn_deleteAccount.setOnAction(event -> timeline.play()/*timer.start()*/);
         btn_optionsNext.setOnAction(this::options);
         btn_optionsCancel.setOnAction(this::cancel);
     }
@@ -101,7 +164,7 @@ public class VerificationController implements Initializable {
         } else if (uSelected && pSelected) {
             loadChangePanel('b');
         } else {
-            StageComposer.setNotifier("warning", null, "Сделайте выбор!", Duration.millis(2000), 30, 230, stage.getMaxHeight()-60, null);
+            StageComposer.setNotifier("warning", null, "Сделайте выбор!", Duration.millis(2000), 30, 230, stage.getMaxHeight() - 60, null);
         }
     }
 
