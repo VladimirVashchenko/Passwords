@@ -2,40 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38ef07e9-03ce-40aa-bd50-f74c0576873c" name="Default" comment="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/passwordProtector/controllers/experiments/InterpolatorApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/passwordProtector/controllers/experiments/ParallelTransitionApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/passwordProtector/controllers/experiments/Spinning.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/passwordProtector/controllers/experiments/TimelineEvents.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/UserData/1.db" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/Users/credentials.db" afterPath="$PROJECT_DIR$/out/production/Passwords/Users/credentials.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/Helper.class" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/Helper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/CustomSkin.class" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/CustomSkin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/CustomTextField.class" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/CustomTextField.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController$1.class" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController$2.class" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController$3.class" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController$MyTask.class" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController$MyTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController.class" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/MainController.class" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/Popover$1.class" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/Popover$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/Popover.class" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/Popover.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/VerificationController.class" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/VerificationController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataProcessing/DBHelper.class" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataProcessing/DBHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/img/openEye.png" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/img/openEye.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/Users/credentials.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/extfx/util/HierarchyData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/AlertDialog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/Helper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/Main$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/Notification$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/Notification$Notifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/Notification.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/StageComposer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/AddDataController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/CustomSkin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/CustomTextField.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController$MyTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/DataChangeController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/MainController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/Popover$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/Popover.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/SignUpFormController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/controllers/VerificationController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/css/Popover.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/css/caspian.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/css/notifier.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataModel/Branch.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataModel/CustomTreeCell.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataModel/TreeViewWithItems$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataModel/TreeViewWithItems.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataModel/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataProcessing/AESDecryption.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataProcessing/AESEncryption.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataProcessing/DBHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataProcessing/DBUser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataProcessing/DecryptionTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataProcessing/Dispatcher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataProcessing/EncryptionTask.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataProcessing/EventExecutorService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataProcessing/KeyWord.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/dataProcessing/PasswordHash.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/img/closedEye.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/img/error.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/img/info.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/img/openEye.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/img/popover-empty2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/img/recyclebin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/img/success.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/img/warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/view/AddDataPop.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/view/ChangePassDialog.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/view/ChangeUsernameDialog.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/view/MainVBox.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/view/OptionsDialog.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/view/Progress.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/view/SignUpDialog.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/view/VerificationDialog.fxml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Passwords.iml" afterPath="$PROJECT_DIR$/Passwords.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/css/caspian.css" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/css/caspian.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/view/MainVBox.fxml" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/view/MainVBox.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/view/OptionsDialog.fxml" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/view/OptionsDialog.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/view/VerificationDialog.fxml" afterPath="$PROJECT_DIR$/out/production/Passwords/passwordProtector/view/VerificationDialog.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordProtector/controllers/DataChangeController.java" afterPath="$PROJECT_DIR$/src/passwordProtector/controllers/DataChangeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordProtector/controllers/MainController.java" afterPath="$PROJECT_DIR$/src/passwordProtector/controllers/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordProtector/controllers/VerificationController.java" afterPath="$PROJECT_DIR$/src/passwordProtector/controllers/VerificationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordProtector/css/caspian.css" afterPath="$PROJECT_DIR$/src/passwordProtector/css/caspian.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordProtector/dataProcessing/DBHelper.java" afterPath="$PROJECT_DIR$/src/passwordProtector/dataProcessing/DBHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordProtector/view/MainVBox.fxml" afterPath="$PROJECT_DIR$/src/passwordProtector/view/MainVBox.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordProtector/view/OptionsDialog.fxml" afterPath="$PROJECT_DIR$/src/passwordProtector/view/OptionsDialog.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordProtector/view/VerificationDialog.fxml" afterPath="$PROJECT_DIR$/src/passwordProtector/view/VerificationDialog.fxml" />
     </list>
     <ignored path="Passwords.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -331,134 +356,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="passwordProtector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="passwordProtector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="passwordProtector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="passwordProtector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dataProcessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="passwordProtector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="passwordProtector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1199,7 +1096,7 @@
       <workItem from="1464732026399" duration="405000" />
       <workItem from="1464736029570" duration="6648000" />
       <workItem from="1464770417978" duration="5721000" />
-      <workItem from="1464786275092" duration="3797000" />
+      <workItem from="1464786275092" duration="4011000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464261319446</created>
@@ -1429,7 +1326,13 @@
       <option name="project" value="LOCAL" />
       <updated>1464790878475</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
+      <created>1464791110614</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1464791110614</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1450,7 +1353,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="614407000" />
+    <option name="totallyTimeSpent" value="614621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
