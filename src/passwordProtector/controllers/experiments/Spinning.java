@@ -20,7 +20,7 @@ import java.io.IOException;
  */
 public class Spinning extends Application {
     @FXML
-    SVGPath svg_background, svg_smallMan, svg_hand;
+    SVGPath svg_bigVortex, svg_smallVortex, svg_smallMan, svg_hand;
     @FXML
     Button btn_deleteAccount;
     @FXML
@@ -28,6 +28,7 @@ public class Spinning extends Application {
 
     private final Timeline timeline = new Timeline();
     private final Timeline timeline1 = new Timeline();
+    private final Timeline timeline2 = new Timeline();
 
 
     @Override
@@ -42,57 +43,69 @@ public class Spinning extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        StageComposer.setUpStage(primaryStage, rootLayout, "", 420, 420, 500, 500);
-        Interpolator rectInterpolator = new Interpolator() {
-            @Override
-            protected double curve(double t) {
-                //return clamp((t < 0.1) ? 3.125 * t * t : (t > 0.5) ? -3.125 * t * t + 6.25 * t - 2.125 : 1.25 * t - 0.125);
-                return t * 0.981;
-            }
+        StageComposer.setUpStage(primaryStage, rootLayout, "", 420, 420, 200, 200);
 
-            private double clamp(double t) {
-                return (t < 0.0) ? 0.0 : (t > 1.0) ? 1.0 : t;
-            }
+        KeyValue bigVKV_tl2 = new KeyValue(svg_bigVortex.rotateProperty(), svg_bigVortex.rotateProperty().doubleValue() - 360, Interpolator.SPLINE(0.4, 1, 0.9, 1));
+        KeyFrame bigVKF_tl2 = new KeyFrame(Duration.seconds(1.5), bigVKV_tl2);
 
-        };
+        KeyValue smallVKV_tl2 = new KeyValue(svg_smallVortex.rotateProperty(), svg_smallVortex.rotateProperty().doubleValue() - 360, Interpolator.SPLINE(1, 1, 0.9, 0.6));
+        KeyFrame smallVKF_tl2 = new KeyFrame(Duration.seconds(2), smallVKV_tl2);
 
-        KeyValue vortexKeyValue = new KeyValue(svg_background.rotateProperty(), svg_background.rotateProperty().doubleValue() - 360, Interpolator.SPLINE(0.3, 1, 0.8, 1));
-        KeyFrame vortexKeyFrame = new KeyFrame(Duration.seconds(2), vortexKeyValue);
+        KeyValue bigVOpacityPlusKV_tl2 = new KeyValue(svg_bigVortex.opacityProperty(), 1, Interpolator.SPLINE(1, 1, 0.8, 1));
+        KeyValue smallVOpacityPlusKV_tl2 = new KeyValue(svg_smallVortex.opacityProperty(), 1, Interpolator.SPLINE(1, 1, 0.8, 1));
+        KeyFrame vortexOpacityPlusKF_tl2 = new KeyFrame(Duration.seconds(0.14), bigVOpacityPlusKV_tl2, smallVOpacityPlusKV_tl2); //****
 
-        KeyValue vortexVisibilityKeyValue = new KeyValue(svg_background.opacityProperty(), 1, Interpolator.SPLINE(0.3, 1, 0.8, 1));
-        KeyFrame vortexVisibilityKeyFrame = new KeyFrame(Duration.seconds(0.45), vortexVisibilityKeyValue);
+        KeyValue bigVOpacityMinusKV = new KeyValue(svg_bigVortex.opacityProperty(), 0, Interpolator.SPLINE(0.3, 0.8, 0.5, 1));
+        KeyValue bigVScaleXMinusKV = new KeyValue(svg_bigVortex.scaleXProperty(), 0, Interpolator.SPLINE(1, 1, 1, 1));
+        KeyValue bigVScaleYMinusKV = new KeyValue(svg_bigVortex.scaleYProperty(), 0, Interpolator.SPLINE(0.8, 1, 1, 1));
 
-        KeyFrame rotate = new KeyFrame(Duration.seconds(0.45),
+        KeyValue smallVOpacityMinusKV = new KeyValue(svg_smallVortex.opacityProperty(), 0, Interpolator.SPLINE(0.3, 0.8, 0.5, 1));
+        KeyValue smallVScaleXMinusKV = new KeyValue(svg_smallVortex.scaleXProperty(), 0, Interpolator.SPLINE(1, 1, 1, 1));
+        KeyValue smallVScaleYMinusKV = new KeyValue(svg_smallVortex.scaleYProperty(), 0, Interpolator.SPLINE(0.8, 1, 1, 1));
+
+        KeyValue smallManOpacityMinusKV = new KeyValue(svg_smallMan.opacityProperty(), 0, Interpolator.SPLINE(1, 1, 0.9, 1));
+        KeyFrame vortexOpacityMinusKF = new KeyFrame(Duration.seconds(0.60), smallManOpacityMinusKV, //****
+                bigVOpacityMinusKV, bigVScaleXMinusKV, bigVScaleYMinusKV,
+                smallVOpacityMinusKV, smallVScaleXMinusKV, smallVScaleYMinusKV);
+
+        KeyFrame vortexAppears = new KeyFrame(Duration.seconds(0.45), // время, через которое появляется воронка
                 event -> {
-                    //svg_background.setRotate(0);
+                    svg_bigVortex.setRotate(0);
+                    svg_bigVortex.setScaleX(1);
+                    svg_bigVortex.setScaleY(1);
+                    svg_smallVortex.setRotate(0);
+                    svg_smallVortex.setScaleX(0.7);
+                    svg_smallVortex.setScaleY(0.8);
                     timeline1.play();
 
                 });
 
+        KeyFrame vortexDisappears = new KeyFrame(Duration.seconds(1), // время, через которое воронка начинает исчезать
+                event -> {
+                    timeline2.play();
+                });
+
         //small man
-        KeyValue smallManTXKeyValue = new KeyValue(group_smallMan.translateXProperty(), group_smallMan.getTranslateX() - 6, Interpolator.LINEAR);
-        KeyFrame smallManTXKeyFrame = new KeyFrame(Duration.seconds(0.4), smallManTXKeyValue);
+        KeyValue smallManTXKV_tl1 = new KeyValue(group_smallMan.translateXProperty(), group_smallMan.getTranslateX() - 6, Interpolator.LINEAR);
+        KeyValue smallManTYKV_tl1 = new KeyValue(svg_smallMan.translateYProperty(), 59, Interpolator.SPLINE(1, 1, 0.5, 1));
+        KeyValue smallManRotKV_tl1 = new KeyValue(svg_smallMan.rotateProperty(), svg_smallMan.getRotate() - 430, Interpolator.SPLINE(0.7, 0.4, 0.8, 1));
+        KeyFrame smallManRotKF_tl1 = new KeyFrame(Duration.seconds(0.4), smallManRotKV_tl1, smallManTXKV_tl1, smallManTYKV_tl1);
 
-        KeyValue smallManTYKeyValue = new KeyValue(svg_smallMan.translateYProperty(), 59, Interpolator.SPLINE(1, 1, 0.5, 1));
-        KeyFrame smallManTYKeyFrame = new KeyFrame(Duration.seconds(0.4), smallManTYKeyValue);
 
-        KeyValue smallManRotKeyValue = new KeyValue(svg_smallMan.rotateProperty(), svg_smallMan.getRotate() - 430, Interpolator.SPLINE(0.7, 0.4, 0.8, 1));
-        KeyFrame smallManRotKeyFrame = new KeyFrame(Duration.seconds(0.4), smallManRotKeyValue);
+        KeyValue handRotKV_tl1 = new KeyValue(svg_hand.rotateProperty(), -184, Interpolator.SPLINE(0.8, 1, 1, 1));
+        KeyValue handTXKV_tl1 = new KeyValue(svg_hand.translateXProperty(), -0.3, Interpolator.SPLINE(0.8, 1, 1, 1));
+        KeyFrame handKF_tl1 = new KeyFrame(Duration.seconds(0.2), handTXKV_tl1, handRotKV_tl1);
 
-        KeyValue handRotKeyValue = new KeyValue(svg_hand.rotateProperty(), -184, Interpolator.SPLINE(0.8, 1, 1, 1));
-        KeyFrame handRotKeyFrame = new KeyFrame(Duration.seconds(0.2), handRotKeyValue);
+        KeyValue handTYKV_tl1 = new KeyValue(svg_hand.translateYProperty(), 16, Interpolator.SPLINE(0.8, 1, 1, 1));
+        KeyFrame handTYKF_tl1 = new KeyFrame(Duration.seconds(0.18), handTYKV_tl1);
 
-        KeyValue handTYKeyValue = new KeyValue(svg_hand.translateYProperty(), 16, Interpolator.SPLINE(0.8, 1, 1, 1));
-        KeyFrame handTYKeyFrame = new KeyFrame(Duration.seconds(0.18), handTYKeyValue);
 
-        KeyValue handTXKeyValue = new KeyValue(svg_hand.translateXProperty(), -0.3, Interpolator.SPLINE(0.8, 1, 1, 1));
-        KeyFrame handTXKeyFrame = new KeyFrame(Duration.seconds(0.2), handTXKeyValue);
+        timeline.getKeyFrames().addAll(vortexAppears,
+                smallManRotKF_tl1,
+                handKF_tl1, handTYKF_tl1);
+        timeline1.getKeyFrames().addAll(vortexOpacityPlusKF_tl2, bigVKF_tl2, smallVKF_tl2, vortexDisappears);
+        timeline2.getKeyFrames().add(vortexOpacityMinusKF);
 
-        timeline1.getKeyFrames().addAll(vortexVisibilityKeyFrame, vortexKeyFrame);
-        timeline.getKeyFrames().addAll(/*vortexKeyFrame,*/ rotate,
-                smallManTXKeyFrame, smallManTYKeyFrame, smallManRotKeyFrame,
-                handRotKeyFrame,
-                handTXKeyFrame, handTYKeyFrame);
-        btn_deleteAccount.setOnAction(event -> timeline.play()/*timer.start()*/);
+        btn_deleteAccount.setOnAction(event -> timeline.play());
     }
 }
