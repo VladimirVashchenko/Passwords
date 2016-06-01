@@ -3,9 +3,9 @@ package passwordProtector;
 import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.shape.SVGPath;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
@@ -36,7 +36,7 @@ public class StageComposer {
         return stage;
     }
 
-    public static void setNotifier(String notificationType, String title, String message, Duration POPUP_LIFETIME, double HEIGHT, double WIDTH, double OFFSET_Y, Image image) {
+    public static void setNotifier(String notificationType, String title, String message, Duration POPUP_LIFETIME, double HEIGHT, double WIDTH, double OFFSET_Y, SVGPath svgPath) {
         notifier = Notification.Notifier.INSTANCE;
         notifier.setPopupLifetime(POPUP_LIFETIME);
         notifier.setHeight(HEIGHT);
@@ -45,19 +45,19 @@ public class StageComposer {
 
         switch (notificationType) {
             case "notify":
-                notifier.notify(title, message, image);
+                notifier.notify(title, message, svgPath);
                 break;
             case "info":
-                notifier.notifyInfo(title, message);
+                notifier.notifyInfoPath(title, message);
                 break;
             case "warning":
-                notifier.notifyWarning(title, message);
+                notifier.notifyWarningPath(title, message);
                 break;
             case "success":
-                notifier.notifySuccess(title, message);
+                notifier.notifySuccessPath(title, message);
                 break;
             case "error":
-                notifier.notifyError(title, message);
+                notifier.notifyErrorPath(title, message);
                 break;
             default:
                 throw new IllegalArgumentException();

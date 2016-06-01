@@ -24,17 +24,17 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.Region;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Paint;
+import javafx.scene.shape.SVGPath;
 import javafx.stage.Popup;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
 
@@ -48,11 +48,22 @@ public class Notification {
     public static final Image INFO_ICON = new Image(Notifier.class.getResourceAsStream("img/info.png"));
     public static final Image WARNING_ICON = new Image(Notifier.class.getResourceAsStream("img/warning.png"));
     public static final Image SUCCESS_ICON = new Image(Notifier.class.getResourceAsStream("img/success.png"));
-    public static final Image ERROR_ICON = new Image(Notifier.class.getResourceAsStream("img/error.png"));
+    public static final Image ERROR_ICON = new Image(Notifier.class.getResourceAsStream("img/error.svg"));
+
+    // added by Vladimir Vashchenko
+    private static final SVGPath INFO_PATH = Icons.getInstance().getINFOpath();
+    private static final SVGPath WARNING_PATH = Icons.getInstance().getWARNINGpath();
+    private static final SVGPath SUCCESS_PATH = Icons.getInstance().getSUCCESSpath();
+    private static final SVGPath ERROR_PATH = Icons.getInstance().getERRORpath();
+    //-------------------------
+
+
     //public final String TITLE;
     public final String MESSAGE;
     public final Image IMAGE;
-
+    // added by Vladimir Vashchenko
+    public final SVGPath PATH;
+    //-----------
 
     // ******************** Constructors **************************************
     public Notification(final String TITLE, final String MESSAGE) {
@@ -67,8 +78,21 @@ public class Notification {
         //this.TITLE = TITLE;
         this.MESSAGE = MESSAGE;
         this.IMAGE = IMAGE;
+
+        // added by Vladimir Vashchenko
+        PATH = null;
+        //---------
     }
 
+
+    // added by Vladimir Vashchenko
+    public Notification(final String MESSAGE, final SVGPath PATH){
+        this.MESSAGE = MESSAGE;
+        this.IMAGE = null;
+        this.PATH = PATH;
+        PATH.setStyle("-fx-scale-x: 0.8; -fx-scale-y: 0.8; ");
+    }
+//-------------------------
 
     // ******************** Inner Classes *************************************
     public enum Notifier {
@@ -264,6 +288,30 @@ public class Notification {
             notify(new Notification(TITLE, MESSAGE, Notification.ERROR_ICON));
         }
 
+
+        // added by Vladimir Vashchenko
+
+        public void notify(final String TITLE, final String MESSAGE, final SVGPath PATH) {
+            notify(new Notification(MESSAGE, PATH));
+        }
+
+        public void notifyInfoPath(final String TITLE, final String MESSAGE) {
+            notify(new Notification(MESSAGE, Notification.INFO_PATH));
+        }
+
+        public void notifyWarningPath(final String TITLE, final String MESSAGE) {
+            notify(new Notification(MESSAGE, Notification.WARNING_PATH));
+        }
+
+        public void notifySuccessPath(final String TITLE, final String MESSAGE) {
+            notify(new Notification(MESSAGE, Notification.SUCCESS_PATH));
+        }
+
+        public void notifyErrorPath(final String TITLE, final String MESSAGE) {
+            notify(new Notification(MESSAGE, Notification.ERROR_PATH));
+        }
+        //------------------
+
         /**
          * Makes sure that the given VALUE is within the range of MIN to MAX
          *
@@ -311,12 +359,24 @@ public class Notification {
             // Label title = new Label(NOTIFICATION.TITLE);
             //title.getStyleClass().add("title");
 
-            ImageView icon = new ImageView(NOTIFICATION.IMAGE);
+            /*ImageView icon = new ImageView(NOTIFICATION.IMAGE);
             icon.setFitWidth(ICON_WIDTH);
             icon.setFitHeight(ICON_HEIGHT);
 
             Label message = new Label(NOTIFICATION.MESSAGE, icon);
+            message.getStyleClass().add("message");*/
+
+            // added by Vladimir Vashchenko
+            Group icon = new Group();
+
+            icon.getChildren().add(NOTIFICATION.PATH);
+
+            icon.prefWidth(ICON_WIDTH);
+            icon.prefHeight(ICON_HEIGHT);
+
+            Label message = new Label(NOTIFICATION.MESSAGE, icon);
             message.getStyleClass().add("message");
+            //--------------
 
             VBox popupLayout = new VBox();
             popupLayout.setSpacing(0);
