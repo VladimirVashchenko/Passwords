@@ -45,10 +45,10 @@ import javafx.util.Duration;
  * Time: 07:10
  */
 public class Notification {
-    public static final Image INFO_ICON = new Image(Notifier.class.getResourceAsStream("img/info.png"));
+    /*public static final Image INFO_ICON = new Image(Notifier.class.getResourceAsStream("img/info.png"));
     public static final Image WARNING_ICON = new Image(Notifier.class.getResourceAsStream("img/warning.png"));
     public static final Image SUCCESS_ICON = new Image(Notifier.class.getResourceAsStream("img/success.png"));
-    public static final Image ERROR_ICON = new Image(Notifier.class.getResourceAsStream("img/error.svg"));
+    public static final Image ERROR_ICON = new Image(Notifier.class.getResourceAsStream("img/error.svg"));*/
 
     // added by Vladimir Vashchenko
     private static final SVGPath INFO_PATH = Icons.getInstance().getINFOpath();
@@ -253,40 +253,40 @@ public class Notification {
          *
          * @param TITLE
          * @param MESSAGE
-         */
+
         public void notifyInfo(final String TITLE, final String MESSAGE) {
             notify(new Notification(TITLE, MESSAGE, Notification.INFO_ICON));
-        }
+        }*/
 
         /**
          * Show a Notification with the given title and message and a Warning icon
          *
          * @param TITLE
          * @param MESSAGE
-         */
+
         public void notifyWarning(final String TITLE, final String MESSAGE) {
             notify(new Notification(TITLE, MESSAGE, Notification.WARNING_ICON));
-        }
+        }*/
 
         /**
          * Show a Notification with the given title and message and a Checkmark icon
          *
          * @param TITLE
          * @param MESSAGE
-         */
+
         public void notifySuccess(final String TITLE, final String MESSAGE) {
             notify(new Notification(TITLE, MESSAGE, Notification.SUCCESS_ICON));
-        }
+        }*/
 
         /**
          * Show a Notification with the given title and message and an Error icon
          *
          * @param TITLE
          * @param MESSAGE
-         */
+
         public void notifyError(final String TITLE, final String MESSAGE) {
             notify(new Notification(TITLE, MESSAGE, Notification.ERROR_ICON));
-        }
+        }*/
 
 
         // added by Vladimir Vashchenko
