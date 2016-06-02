@@ -80,8 +80,8 @@
       <file leaf-file-name="CustomSkin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/CustomSkin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3676976">
-              <caret line="108" column="111" selection-start-line="108" selection-start-column="111" selection-end-line="108" selection-end-column="111" />
+            <state vertical-scroll-proportion="0.10309278">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -1098,7 +1098,7 @@
       <workItem from="1464866235447" duration="92000" />
       <workItem from="1464866404440" duration="8000" />
       <workItem from="1464866419664" duration="182000" />
-      <workItem from="1464866689236" duration="1585000" />
+      <workItem from="1464866689236" duration="1707000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464261319446</created>
@@ -1376,7 +1376,19 @@
       <option name="project" value="LOCAL" />
       <updated>1464868889201</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
+      <created>1464868906337</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1464868906337</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
+      <created>1464869010835</created>
+      <option name="number" value="00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1464869010835</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1397,7 +1409,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="623358000" />
+    <option name="totallyTimeSpent" value="623480000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2007,8 +2019,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/CustomSkin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3676976">
-          <caret line="108" column="111" selection-start-line="108" selection-start-column="111" selection-end-line="108" selection-end-column="111" />
+        <state vertical-scroll-proportion="0.10309278">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding />
         </state>
       </provider>
