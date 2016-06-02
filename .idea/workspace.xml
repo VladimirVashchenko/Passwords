@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38ef07e9-03ce-40aa-bd50-f74c0576873c" name="Default" comment="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
+    <list default="true" id="38ef07e9-03ce-40aa-bd50-f74c0576873c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Passwords.iws" />
@@ -80,7 +80,7 @@
       <file leaf-file-name="CustomSkin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/CustomSkin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36026937">
+            <state vertical-scroll-proportion="0.3676976">
               <caret line="108" column="111" selection-start-line="108" selection-start-column="111" selection-end-line="108" selection-end-column="111" />
               <folding />
             </state>
@@ -1098,7 +1098,7 @@
       <workItem from="1464866235447" duration="92000" />
       <workItem from="1464866404440" duration="8000" />
       <workItem from="1464866419664" duration="182000" />
-      <workItem from="1464866689236" duration="1455000" />
+      <workItem from="1464866689236" duration="1568000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464261319446</created>
@@ -1364,7 +1364,13 @@
       <option name="project" value="LOCAL" />
       <updated>1464868214255</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
+      <created>1464868763838</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1464868763838</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1385,7 +1391,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="623228000" />
+    <option name="totallyTimeSpent" value="623341000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1406,7 +1412,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30992195" sideWeight="0.5021322" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30657747" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3199554" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30992195" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1995,7 +2001,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/CustomSkin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36026937">
+        <state vertical-scroll-proportion="0.3676976">
           <caret line="108" column="111" selection-start-line="108" selection-start-column="111" selection-end-line="108" selection-end-column="111" />
           <folding />
         </state>
