@@ -101,12 +101,12 @@ public class Main extends Application {
 
         rootPane.getChildren().addAll(lbl_username, lbl_password, username_box, password_box, btn_ok, btn_cancel, link_signUp);
 
-        lblSettings(lbl_username, 25, 49);
-        lblSettings(lbl_password, 25, 84);
-        textFieldSettings(username_box, "Введите логин", 125, 45, 150);
-        textFieldSettings(password_box, "и пароль", 125, 80, 150);
+        StageComposer.lblSettings(lbl_username, 25, 49);
+        StageComposer.lblSettings(lbl_password, 25, 84);
+        StageComposer.textFieldSettings(username_box, "Введите логин", 125, 45, 150);
+        StageComposer.textFieldSettings(password_box, "и пароль", 125, 80, 150);
 
-        buttonSettings(btn_ok, 174, 142, 21, 46);
+        StageComposer.buttonSettings(btn_ok, 174, 142, 21, 46);
         btn_ok.setDefaultButton(true);
         btn_ok.setMnemonicParsing(false);
         btn_ok.setOnAction(event -> {
@@ -117,7 +117,7 @@ public class Main extends Application {
             }
         });
 
-        buttonSettings(btn_cancel, 228, 142, 21, 62);
+        StageComposer.buttonSettings(btn_cancel, 228, 142, 21, 62);
         btn_cancel.setCancelButton(true);
         btn_cancel.setMnemonicParsing(false);
         btn_cancel.setOnAction(event -> closeApplication());
@@ -134,27 +134,6 @@ public class Main extends Application {
         });
 
         StageComposer.setUpStage(primaryStage, rootPane, "Авторизация", 320, 320, 215, 215);
-    }
-
-    private void buttonSettings(Button btn, int layX, int layY, int prefH, int prefW){
-        btn.setLayoutX(layX);
-        btn.setLayoutY(layY);
-        btn.setMnemonicParsing(false);
-        btn.prefHeight(prefH);
-        btn.prefWidth(prefW);
-        btn.setStyle("-fx-padding: 2;");
-    }
-
-    private void textFieldSettings(TextField tf, String prmptText, int layX, int layY, int prefW){
-        tf.setLayoutX(layX);
-        tf.setLayoutY(layY);
-        tf.setPrefWidth(prefW);
-        tf.setPromptText(prmptText);
-    }
-
-    private void lblSettings(Label lbl, int layX, int layY){
-        lbl.setLayoutX(layX);
-        lbl.setLayoutY(layY);
     }
 
     public Stage getPrimaryStage() {

@@ -3,6 +3,8 @@ package passwordProtector;
 import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.SVGPath;
@@ -34,6 +36,27 @@ public class StageComposer {
         stage.show();
         rootLayout.requestFocus();
         return stage;
+    }
+
+    public static void buttonSettings(Button btn, int layX, int layY, int prefH, int prefW){
+        btn.setLayoutX(layX);
+        btn.setLayoutY(layY);
+        btn.setMnemonicParsing(false);
+        btn.prefHeight(prefH);
+        btn.prefWidth(prefW);
+        btn.setStyle("-fx-padding: 2;");
+    }
+
+    public static  void textFieldSettings(TextField tf, String prmptText, int layX, int layY, int prefW){
+        tf.setLayoutX(layX);
+        tf.setLayoutY(layY);
+        tf.setPrefWidth(prefW);
+        tf.setPromptText(prmptText);
+    }
+
+    public static  void lblSettings(Label lbl, int layX, int layY){
+        lbl.setLayoutX(layX);
+        lbl.setLayoutY(layY);
     }
 
     public static void setNotifier(String notificationType, String title, String message, Duration POPUP_LIFETIME, double HEIGHT, double WIDTH, double OFFSET_Y, SVGPath svgPath) {
