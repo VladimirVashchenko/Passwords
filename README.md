@@ -48,3 +48,5 @@ src/passwordProtector/StageComposer.java.
 ![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_menu_2.png)
 
 ![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_menu_3.png)
+
+![alt text](https://github.com/VladimirVashchenko/Passwords/blob/master/Screenshots/Main_menu_4.png)
