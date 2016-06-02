@@ -1098,7 +1098,7 @@
       <workItem from="1464866235447" duration="92000" />
       <workItem from="1464866404440" duration="8000" />
       <workItem from="1464866419664" duration="182000" />
-      <workItem from="1464866689236" duration="1568000" />
+      <workItem from="1464866689236" duration="1585000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464261319446</created>
@@ -1370,7 +1370,13 @@
       <option name="project" value="LOCAL" />
       <updated>1464868763838</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
+      <created>1464868889201</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1464868889201</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1391,7 +1397,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="623341000" />
+    <option name="totallyTimeSpent" value="623358000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
