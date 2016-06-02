@@ -13,7 +13,7 @@ import javafx.scene.shape.SVGPath;
 
 class CustomSkin extends TextFieldSkin {
 
-    protected TextField textField;
+    private final TextField textField;
     final Group openEye;
     final Group closedEye;
     protected final ToggleButton toggleButton;
