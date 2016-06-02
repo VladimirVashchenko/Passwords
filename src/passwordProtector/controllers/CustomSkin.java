@@ -16,16 +16,51 @@ class CustomSkin extends TextFieldSkin {
     protected TextField textField;
     final Group openEye;
     final Group closedEye;
-    private static final ToggleButton toggleButton = new ToggleButton();
+    protected final ToggleButton toggleButton;
+
+    private boolean shouldMaskText = true;
 
     public CustomSkin(final TextField textField) {
         super(textField);
+        toggleButton = new ToggleButton();
         this.textField = textField;
 
         SVGPath path1 = new SVGPath();
         SVGPath path2 = new SVGPath();
 
-        path1.setContent("M0.0185825,11.2474508c0.3260324-0.5753508,0.6594008-1.1466064,0.9780971-1.7260532\n" +
+        selectedIcon(path1);
+        unselectdIcon(path2);
+
+
+        toggleButton.setCursor(Cursor.DEFAULT);
+        toggleButton.setManaged(false);
+        toggleButton.setVisible(false);
+
+        toggleButton.getStyleClass().setAll("toggle-eye");
+
+        openEye = new Group();
+        closedEye = new Group();
+
+        openEye.getChildren().addAll(path1);
+        closedEye.getChildren().addAll(path2);
+
+        toggleButton.setFocusTraversable(false);
+
+        toggleButton.selectedProperty().addListener((observable1, oldValue, newValue) -> {
+            if (newValue) {
+                toggleSelected();
+            } else {
+                toggleUnselected();
+            }
+        });
+
+        textField.textProperty().addListener(observable -> {
+            this.toggleButton.visibleProperty().set(!textField.textProperty().get().isEmpty());
+        });
+    }
+
+    private void selectedIcon(SVGPath svgPath) {
+        svgPath.setContent("M0.0185825,11.2474508c0.3260324-0.5753508,0.6594008-1.1466064,0.9780971-1.7260532\n" +
                 "\tc0.316443-0.5753508,0.6328861-1.1507025,0.9780968-1.7260542C1.571858,7.3303804,1.1689398,6.8654156,0.7660216,6.4004526\n" +
                 "\tC0.0791067,5.8780479,0.0698413,4.952961,0.4852571,4.5538864c0.401181-0.3854008,1.2801549-0.3587208,1.7925732,0.291563\n" +
                 "\tC2.6370933,5.2150393,2.996356,5.58463,3.355619,5.9542198c0.4602811-0.345211,1.0356321-0.6904202,1.495913-1.1507015\n" +
@@ -50,8 +85,10 @@ class CustomSkin extends TextFieldSkin {
                 "\tC7.3534536,6.1428461,4.7349772,8.1491756,3.7572429,11.0330658z M10.8260288,7.3531356\n" +
                 "\tc1.9700975,0,3.5671778,1.5970798,3.5671778,3.5671773s-1.5970802,3.5671778-3.5671778,3.5671778\n" +
                 "\ts-3.5671782-1.5970802-3.5671782-3.5671778S8.8559303,7.3531356,10.8260288,7.3531356z");
+    }
 
-        path2.setContent("M20.2565918,11.8996267c-0.3117981,0.6290808-0.634613,1.1943445-0.9493408,1.6956787\n" +
+    private void unselectdIcon(SVGPath svgPath) {
+        svgPath.setContent("M20.2565918,11.8996267c-0.3117981,0.6290808-0.634613,1.1943445-0.9493408,1.6956787\n" +
                 "\tc0.4859619,0.4751587,0.9719238,0.9502563,1.4578247,1.425415c0.4995728,0.3709106,0.5671997,1.0946665,0.1724243,1.5371103\n" +
                 "\tc-0.3898926,0.4370117-1.1046753,0.458313-1.53302,0.0178833c-0.5183716-0.4679565-1.0366821-0.935853-1.5549927-1.4038095\n" +
                 "\tc-0.2024536,0.1358643-0.4127197,0.286377-0.6279297,0.453125c-0.2759399,0.2138672-0.5248413,0.4270029-0.7479248,0.6328745\n" +
@@ -74,41 +111,28 @@ class CustomSkin extends TextFieldSkin {
                 "\t M21.0625,5.1400003c-2.0133114-0.9117098-4.4403667-1.8170671-7.25-2.500001c-5.352273-1.3009701-10.0475388-1.2976227-13.4375-1\n" +
                 "\tc-0.1082887,0.2928925-0.2198281,0.7409401-0.0625,1.1875c0.714594,2.0283031,5.7323203,0.4957943,12.5625,2.187501\n" +
                 "\tc4.1240273,1.0214443,7.0493641,2.7577839,8,1.625C21.2238922,6.2242584,21.1625938,5.593895,21.0625,5.1400003z");
+    }
 
-        toggleButton.setCursor(Cursor.DEFAULT);
-        toggleButton.setManaged(false);
-        toggleButton.setVisible(false);
+    protected void toggleSelected() {
+        toggleButton.setGraphic(openEye);
+        TextField textField = getSkinnable();
+        shouldMaskText = false;
+        textField.setText(textField.getText());
+        textField.end();
+    }
 
-        toggleButton.getStyleClass().setAll("toggle-eye");
-
-        openEye = new Group();
-        closedEye = new Group();
-
-        openEye.getChildren().addAll(path1);
-        closedEye.getChildren().addAll(path2);
-
-        //toggleButton.setGraphic(closedEye);
-        toggleButton.setFocusTraversable(false);
-
-        toggleButton.selectedProperty().addListener((observable1, oldValue, newValue) -> {
-            textField.setText(textField.getText());
-            textField.end();
-            if (newValue) {
-                toggleButton.setGraphic(openEye);
-            } else {
-                toggleButton.setGraphic(closedEye);
-            }
-        });
-
-        textField.textProperty().addListener(observable -> {
-            toggleButton.visibleProperty().set(!textField.textProperty().get().isEmpty());
-        });
+    protected void toggleUnselected() {
+        toggleButton.setGraphic(closedEye);
+        TextField textField = getSkinnable();
+        shouldMaskText = true;
+        textField.setText(textField.getText());
+        textField.end();
     }
 
     @Override
     protected String maskText(String txt) {
-        if (!toggleButton.selectedProperty().get() && getSkinnable() instanceof PasswordField) {
-            Platform.runLater(()->toggleButton.setGraphic(closedEye));
+        if (getSkinnable() instanceof PasswordField && shouldMaskText) {
+            Platform.runLater(() -> toggleButton.setGraphic(closedEye));
             int n = txt.length();
             StringBuilder passwordBuilder = new StringBuilder(n);
             for (int i = 0; i < n; i++) {
@@ -117,7 +141,7 @@ class CustomSkin extends TextFieldSkin {
 
             return passwordBuilder.toString();
         } else {
-            Platform.runLater(()->toggleButton.setGraphic(openEye));
+            Platform.runLater(() -> toggleButton.setGraphic(openEye));
             return txt;
         }
     }
