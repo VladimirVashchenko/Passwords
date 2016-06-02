@@ -90,6 +90,9 @@
                </children>
             </Group>
          </graphic>
+         <tooltip>
+            <Tooltip text="Удалить учётную запись" />
+         </tooltip>
       </Button>
     </children>
 </AnchorPane>
