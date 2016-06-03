@@ -3,7 +3,7 @@ An application used to save encrypted account data in SQLite database
 
 Note: this is a complete IDEA project.
 
-In order to deploy as a standalone application with the provided passwords.xml file, change stylesheets extension from .css to .bss
+In order to deploy as a standalone application with the provided ant build script in passwords.xml, change stylesheets extension from .css to .bss
 in: 
 
 src/passwordProtector/controllers/Popover.java;
