@@ -1,5 +1,5 @@
 # Passwords
-An application used to save encrypted account data in SQLite database
+An application used to store encrypted account data in SQLite database
 
 Note: this is a complete IDEA project.
 
