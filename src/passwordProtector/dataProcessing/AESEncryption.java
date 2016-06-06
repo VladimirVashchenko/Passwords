@@ -36,8 +36,7 @@ public class AESEncryption {
 
         byte[] iv = params.getParameterSpec(IvParameterSpec.class).getIV();
 
-        byte[] input = /*new byte[inputStr.length()];
-        input = */inputStr.getBytes("UTF-8");
+        byte[] input = inputStr.getBytes("UTF-8");
         //  System.out.println("input: " + input);
 
         byte[] output = cipher.doFinal(input);
