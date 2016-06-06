@@ -36,7 +36,7 @@ public class Popover extends Region {
     public Popover(AddDataController addDataController, AnchorPane treePane) {
         frameBorder.setMouseTransparent(true);
         frameBorder.getStyleClass().setAll("popover-frame");
-        frameBorder.getStylesheets().addAll(Main.class.getResource("css/Popover.css").toExternalForm());
+        frameBorder.getStylesheets().addAll(Main.class.getResource("css/Popover.bss").toExternalForm());
         frameBorder.setMinWidth(290);
         frameBorder.setMinHeight(264);
 

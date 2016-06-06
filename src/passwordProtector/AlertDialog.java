@@ -83,7 +83,7 @@ public class AlertDialog {
             stage.close();
         });
 
-        scene.getStylesheets().add(Main.class.getResource("css/caspian.css").toExternalForm());
+        scene.getStylesheets().add(Main.class.getResource("css/caspian.bss").toExternalForm());
         stage.setMinWidth(330);
         stage.setMinHeight(165);
         stage.setTitle(title);

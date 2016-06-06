@@ -33,6 +33,7 @@ import passwordProtector.dataModel.User;
 import passwordProtector.dataProcessing.*;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.util.*;
 import java.util.concurrent.*;
@@ -228,7 +229,12 @@ public class MainController implements Initializable {
 
                     String username = userdata[0];
                     String password = processed[0];
-                    String otherData = processed[1] != null ? processed[1] : "";
+                    String otherData = null;
+                    try {
+                        otherData = processed[1] != null ? new String(processed[1].getBytes("UTF-8"), "UTF-8") : "";
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
 
                     edit_usernameMain.setText(username);
                     edit_passwordMain.setText(password);

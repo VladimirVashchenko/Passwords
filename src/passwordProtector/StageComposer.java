@@ -22,8 +22,8 @@ public class StageComposer {
     public static Stage setUpStage(Stage stage, Pane rootLayout, String title,
                                    double maxWidth, double minWidth, double maxHeight, double minHeight) {
         Scene scene = new Scene(rootLayout);
-        scene.getStylesheets().add(Main.class.getResource("css/caspian.css").toExternalForm());
-        scene.getStylesheets().add(Main.class.getResource("css/notifier.css").toExternalForm());
+        scene.getStylesheets().add(Main.class.getResource("css/caspian.bss").toExternalForm());
+        scene.getStylesheets().add(Main.class.getResource("css/notifier.bss").toExternalForm());
 
         stage.setTitle(title);
         stage.setMaxHeight(maxHeight);
