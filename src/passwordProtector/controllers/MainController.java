@@ -247,6 +247,7 @@ public class MainController implements Initializable {
 
             } else {
                 setVisibility(false);
+                check_setEdit.setSelected(false);
                 txt_otherData.setText("");
                 edit_usernameMain.setText("");
                 edit_passwordMain.setText("");
