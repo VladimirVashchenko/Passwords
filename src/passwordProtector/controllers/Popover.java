@@ -19,7 +19,7 @@ import javafx.util.Duration;
 import passwordProtector.Main;
 
 import java.io.IOException;
-/** Code sample was taken from the Oracle's Ensemble demo*/
+/* Code sample was taken from the Oracle's Ensemble demo*/
 public class Popover extends Region {
     private final Region frameBorder = new Region();
     private Pane innerPane;
