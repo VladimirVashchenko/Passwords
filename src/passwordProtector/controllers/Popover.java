@@ -19,7 +19,7 @@ import javafx.util.Duration;
 import passwordProtector.Main;
 
 import java.io.IOException;
-
+/** Code sample was taken from the Oracle's Ensemble demo*/
 public class Popover extends Region {
     private final Region frameBorder = new Region();
     private Pane innerPane;
@@ -84,8 +84,6 @@ public class Popover extends Region {
 
     private Animation fadeAnimation = null;
 
-
-    // TODO: сделать чтоб анимация срабатывала с первого же вызова
     public void show(Runnable onHideCallback) {
         if (!isVisible() || fadeAnimation != null) {
             this.onHideCallback = onHideCallback;
