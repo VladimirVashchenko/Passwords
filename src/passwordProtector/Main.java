@@ -143,9 +143,9 @@ public class Main extends Application {
     @FXML
     private void handleSignInButonAction() throws IOException, InvalidKeySpecException, NoSuchAlgorithmException {
         // validates the user
-        if (!username_box.getText().isEmpty() && !password_box/*password_field*/.getText().isEmpty()) {
+        if (!username_box.getText().isEmpty() && !password_box.getText().isEmpty()) {
             String username = username_box.getText();
-            String password = password_box/*password_field*/.getText();
+            String password = password_box.getText();
             boolean let_in = db.getUserValidation(username, password);
             if (let_in) {
                 String salt = db.getUserSalt(username);
