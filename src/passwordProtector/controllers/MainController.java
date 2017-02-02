@@ -743,7 +743,7 @@ public class MainController implements Initializable {
         return found;
     }
 
-    // TODO: 02.06.2016 заменить к чертям собачьим на сборку через чистую джаву, ибо какого-то хрена на окне проверки логопароля изменение статуса маски текста влияет на такое же поле в основном окне!!!
+
     @FXML
     private void handleLogPassChangeMenu() throws IOException {
         Stage stage = new Stage(StageStyle.UNIFIED);

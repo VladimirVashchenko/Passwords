@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38ef07e9-03ce-40aa-bd50-f74c0576873c" name="Default" comment="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app/bundles/Passwords-3.0.4.exe" afterPath="$PROJECT_DIR$/build/app/bundles/Passwords-3.0.4.exe" />
+    <list default="true" id="38ef07e9-03ce-40aa-bd50-f74c0576873c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/app/bundles/Passwords-3.1.final.exe" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/cssdialects.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/app/bundles/Passwords-3.0.4.exe" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app/passwords.jar" afterPath="$PROJECT_DIR$/build/app/passwords.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/passwordProtector/AlertDialog.class" afterPath="$PROJECT_DIR$/build/classes/passwordProtector/AlertDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/passwordProtector/StageComposer.class" afterPath="$PROJECT_DIR$/build/classes/passwordProtector/StageComposer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/passwordProtector/controllers/MainController.class" afterPath="$PROJECT_DIR$/build/classes/passwordProtector/controllers/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/passwordProtector/controllers/Popover.class" afterPath="$PROJECT_DIR$/build/classes/passwordProtector/controllers/Popover.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/passwordProtector/dataProcessing/AESEncryption.class" afterPath="$PROJECT_DIR$/build/classes/passwordProtector/dataProcessing/AESEncryption.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/passwordProtector/css/Popover.bss" afterPath="$PROJECT_DIR$/build/classes/passwordProtector/css/Popover.bss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/passwordProtector/css/caspian.bss" afterPath="$PROJECT_DIR$/build/classes/passwordProtector/css/caspian.bss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/dist/passwords.jar" afterPath="$PROJECT_DIR$/build/dist/passwords.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app/passwords.jar.jnlp" afterPath="$PROJECT_DIR$/build/app/passwords.jar.jnlp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordProtector/AlertDialog.java" afterPath="$PROJECT_DIR$/src/passwordProtector/AlertDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordProtector/StageComposer.java" afterPath="$PROJECT_DIR$/src/passwordProtector/StageComposer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/passwords.properties" afterPath="$PROJECT_DIR$/passwords.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/passwords.xml" afterPath="$PROJECT_DIR$/passwords.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordProtector/controllers/MainController.java" afterPath="$PROJECT_DIR$/src/passwordProtector/controllers/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordProtector/controllers/Popover.java" afterPath="$PROJECT_DIR$/src/passwordProtector/controllers/Popover.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/passwordProtector/dataProcessing/AESEncryption.java" afterPath="$PROJECT_DIR$/src/passwordProtector/dataProcessing/AESEncryption.java" />
     </list>
     <ignored path="Passwords.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +38,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="D:\Program Files\IntelliJ IDEA 15.0.3\projects\Passwords" />
   </component>
@@ -56,107 +53,76 @@
     <favorites_list name="Passwords" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.0">
-                <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="235" column="24" selection-start-line="235" selection-start-column="24" selection-end-line="235" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlertDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/passwordProtector/AlertDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="85" column="72" selection-start-line="85" selection-start-column="72" selection-end-line="85" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AESEncryption.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/AESEncryption.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6954315">
-              <caret line="39" column="17" selection-start-line="38" selection-start-column="23" selection-end-line="39" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AESDecryption.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/AESDecryption.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Popover.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/Popover.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.448276">
-              <caret line="38" column="81" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StageComposer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/passwordProtector/StageComposer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/DBHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="75" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="75" />
-              <folding>
-                <marker date="1464790941307" expanded="true" signature="6496:6619" placeholder="SELECT users... users" />
-                <marker date="1464790941307" expanded="true" signature="7632:7767" placeholder="SELECT users... locations" />
-                <marker date="1464790941307" expanded="true" signature="8545:8811" placeholder="SELECT users... users" />
-                <marker date="1464790941307" expanded="true" signature="8758:8810" placeholder="SELECT locat... locations" />
-                <marker date="1464790941307" expanded="true" signature="9728:9773" placeholder="SELECT usern... users" />
-                <marker date="1464790941307" expanded="true" signature="10514:10569" placeholder="SELECT usern... users" />
-                <marker date="1464790941307" expanded="true" signature="11370:11412" placeholder="SELECT salt users" />
-                <marker date="1464790941307" expanded="true" signature="14909:14956" placeholder="UPDATE users... " />
-                <marker date="1464790941307" expanded="true" signature="15024:15072" placeholder="UPDATE other... " />
-                <marker date="1464790941307" expanded="true" signature="17132:17243" placeholder="SELECT COUNT... users" />
-                <marker date="1464790941307" expanded="true" signature="17190:17242" placeholder="SELECT locat... locations" />
-                <marker date="1464790941307" expanded="true" signature="17556:17596" placeholder="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.48366013">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="passwords.properties" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/passwords.properties">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="passwords.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/passwords.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="144" column="83" lean-forward="false" selection-start-line="144" selection-start-column="83" selection-end-line="144" selection-end-column="83" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/MainController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="275">
+                  <caret line="745" column="0" lean-forward="false" selection-start-line="745" selection-start-column="0" selection-end-line="745" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="StageComposer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/passwordProtector/StageComposer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="193">
+                  <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/passwordProtector/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="184">
+                  <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="passwords.properties" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/passwords.properties">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="20">
+                  <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -191,8 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_HOME_DIR$/projects/Passwords backup/05.2016/Passwords (wip 06.05.2016)/Passwords/src/passwordProtector/view/mainVBox.fxml" />
-        <option value="$PROJECT_DIR$/src/passwordProtector/DBHelper.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/CustomTextField.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/CustomSkin.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/view/mainVBox.fxml" />
@@ -201,17 +165,14 @@
         <option value="$PROJECT_DIR$/src/passwordProtector/encryption/AESDecryption.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/encryption/AESEncryption.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/controllers/DBEncryptionTask.java" />
-        <option value="$PROJECT_DIR$/src/passwordProtector/dataProcessing/EventExecutorService.java" />
         <option value="/SQLite Fragment (DBHelper.java:6755).sql" />
         <option value="$PROJECT_DIR$/src/passwordProtector/controllers/Crypto.java" />
-        <option value="$PROJECT_DIR$/src/passwordProtector/dataProcessing/Dispatcher.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/dataProcessing/DBUser.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/dataProcessing/DataChangeTask.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/dataProcessing/EncryptionTask.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/dataProcessing/AESDecryption.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/dataProcessing/DecryptionTask.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/dataModel/CustomTreeCell.java" />
-        <option value="$PROJECT_DIR$/passwords.xml" />
         <option value="$APPLICATION_HOME_DIR$/projects/TextFieldWithToggle/src/customComponent/CustomSkin.java" />
         <option value="$APPLICATION_HOME_DIR$/projects/TextFieldWithToggle/src/customComponent/CustomTextField.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/Helper.java" />
@@ -233,22 +194,28 @@
         <option value="$PROJECT_DIR$/src/passwordProtector/Notification.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/controllers/CustomPasswordFieldSkin.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/controllers/CustomTextField.java" />
-        <option value="$PROJECT_DIR$/src/passwordProtector/Main.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/controllers/VerificationController.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/controllers/CustomSkin.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/passwordProtector/controllers/MainController.java" />
-        <option value="$PROJECT_DIR$/src/passwordProtector/StageComposer.java" />
-        <option value="$PROJECT_DIR$/src/passwordProtector/controllers/Popover.java" />
-        <option value="$PROJECT_DIR$/src/passwordProtector/AlertDialog.java" />
         <option value="$PROJECT_DIR$/src/passwordProtector/dataProcessing/AESEncryption.java" />
+        <option value="$PROJECT_DIR$/src/passwordProtector/dataProcessing/EventExecutorService.java" />
+        <option value="$PROJECT_DIR$/src/passwordProtector/dataProcessing/Dispatcher.java" />
+        <option value="$PROJECT_DIR$/src/passwordProtector/controllers/experiments/ParallelTransitionApp.java" />
+        <option value="$PROJECT_DIR$/src/passwordProtector/Main.java" />
+        <option value="$PROJECT_DIR$/src/passwordProtector/controllers/Popover.java" />
+        <option value="$PROJECT_DIR$/src/passwordProtector/StageComposer.java" />
+        <option value="$PROJECT_DIR$/src/passwordProtector/AlertDialog.java" />
+        <option value="$PROJECT_DIR$/passwords.xml" />
+        <option value="$PROJECT_DIR$/src/passwordProtector/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/passwords.properties" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -263,10 +230,14 @@
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_HOME" />
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1924" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -277,10 +248,43 @@
             <id />
           </State>
           <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code style issuesCSS</id>
+          </State>
+          <State>
             <id>GeneralJavaScript</id>
           </State>
           <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>JavaFX</id>
+          </State>
+          <State>
             <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Sass/SCSS</id>
           </State>
         </expanded-state>
         <selected-state>
@@ -291,16 +295,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -316,6 +311,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -323,90 +321,8 @@
               <option name="myItemId" value="Passwords" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="passwordProtector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="passwordProtector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dataProcessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="passwordProtector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Passwords" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,24 +382,22 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build" />
+    <property name="last_opened_file_path" value="X:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/JavaFX Scene Builder 2.0.exe" />
     <property name="full.screen.before.presentation.mode" value="true" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
+    <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -528,32 +442,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="VerificationControllerTest.testLoadOptionsPanel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="passwordProtector.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Passwords" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="passwordProtector.controllers" />
-      <option name="MAIN_CLASS_NAME" value="passwordProtector.controllers.VerificationControllerTest" />
-      <option name="METHOD_NAME" value="testLoadOptionsPanel" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="TimelineEvents" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -594,9 +482,34 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Spinning (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Spinning" />
+    <configuration default="false" name="InterpolatorApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="passwordProtector.controllers.experiments.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="passwordProtector.controllers.experiments.InterpolatorApp" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Passwords" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ParallelTransitionApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="passwordProtector.controllers.experiments.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="passwordProtector.controllers.experiments.ParallelTransitionApp" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -613,35 +526,35 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
-      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
-      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
-      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -651,27 +564,24 @@
       <option name="METHOD_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
-      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
-      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
-      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -754,6 +664,9 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
       <method />
     </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
@@ -841,13 +754,13 @@
       <method />
     </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
       <setting name="vmparams" value="" />
       <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
       <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <setting name="launchBrowser" value="false" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -862,27 +775,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -910,6 +802,12 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -983,48 +881,8 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
-      <setting name="environment" value="" />
-      <setting name="specsToExecute" value="" />
-      <setting name="tags" value="" />
-      <setting name="parallelNodes" value="" />
-      <setting name="execInParallel" value="false" />
-      <setting name="programParameters" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="moduleName" value="" />
-      <envMap />
-      <setting name="rowsRange" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
@@ -1033,8 +891,9 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -1046,22 +905,53 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.VerificationControllerTest.testLoadOptionsPanel" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TimelineEvents" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Spinning" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Spinning (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Application.TimelineEvents" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Spinning" />
+      <item index="3" class="java.lang.String" itemvalue="Application.InterpolatorApp" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ParallelTransitionApp" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Spinning" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VerificationControllerTest.testLoadOptionsPanel" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Spinning (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Application.TimelineEvents" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ParallelTransitionApp" />
+        <item index="2" class="java.lang.String" itemvalue="Application.InterpolatorApp" />
+        <item index="3" class="java.lang.String" itemvalue="Application.TimelineEvents" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Spinning" />
       </list>
     </recent_temporary>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -1070,6 +960,7 @@
       <changelist id="38ef07e9-03ce-40aa-bd50-f74c0576873c" name="Default" comment="" />
       <created>1456075196877</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1456075196877</updated>
       <workItem from="1456075198267" duration="1090000" />
       <workItem from="1460964748075" duration="3219000" />
@@ -1206,303 +1097,377 @@
       <workItem from="1464957061304" duration="718000" />
       <workItem from="1465123932224" duration="87000" />
       <workItem from="1465217171615" duration="904000" />
-      <workItem from="1465220219658" duration="1220000" />
-    </task>
-    <task id="LOCAL-00010" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
-      <created>1464271060604</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1464271060604</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
-      <created>1464274739520</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1464274739520</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
-      <created>1464285585266</created>
-      <option name="number" value="00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1464285585266</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
-      <created>1464286896111</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1464286896111</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
-      <created>1464287407345</created>
-      <option name="number" value="00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1464287407345</updated>
+      <workItem from="1465220219658" duration="1689000" />
+      <workItem from="1465570491783" duration="918000" />
+      <workItem from="1466024699137" duration="12000" />
+      <workItem from="1466155751963" duration="81000" />
+      <workItem from="1466171420521" duration="595000" />
+      <workItem from="1466428215512" duration="29000" />
+      <workItem from="1466557673573" duration="347000" />
+      <workItem from="1466558038310" duration="905000" />
+      <workItem from="1471940685664" duration="4228000" />
+      <workItem from="1472130810055" duration="2586000" />
+      <workItem from="1472194429592" duration="619000" />
+      <workItem from="1474722405990" duration="1438000" />
+      <workItem from="1477501060538" duration="87000" />
+      <workItem from="1477828175743" duration="157000" />
+      <workItem from="1478531935934" duration="341000" />
+      <workItem from="1478545323975" duration="242000" />
+      <workItem from="1478715710395" duration="791000" />
+      <workItem from="1478716513582" duration="227000" />
+      <workItem from="1478716877479" duration="84000" />
+      <workItem from="1478716980618" duration="483000" />
+      <workItem from="1478718424614" duration="17000" />
+      <workItem from="1480951065360" duration="170000" />
+      <workItem from="1481110431495" duration="436000" />
+      <workItem from="1482733537533" duration="118000" />
+      <workItem from="1485811240995" duration="682000" />
+      <workItem from="1486074762704" duration="638000" />
     </task>
     <task id="LOCAL-00015" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464290066937</created>
       <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
       <updated>1464290066937</updated>
     </task>
     <task id="LOCAL-00016" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464312960315</created>
       <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
       <updated>1464312960315</updated>
     </task>
     <task id="LOCAL-00017" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464313632221</created>
       <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
       <updated>1464313632221</updated>
     </task>
     <task id="LOCAL-00018" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464313645096</created>
       <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
       <updated>1464313645096</updated>
     </task>
     <task id="LOCAL-00019" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464313832268</created>
       <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
       <updated>1464313832268</updated>
     </task>
     <task id="LOCAL-00020" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464314101171</created>
       <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
       <updated>1464314101171</updated>
     </task>
     <task id="LOCAL-00021" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464452533085</created>
       <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
       <updated>1464452533085</updated>
     </task>
     <task id="LOCAL-00022" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464452544609</created>
       <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
       <updated>1464452544609</updated>
     </task>
     <task id="LOCAL-00023" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464481954135</created>
       <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
       <updated>1464481954135</updated>
     </task>
     <task id="LOCAL-00024" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464484217261</created>
       <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
       <updated>1464484217261</updated>
     </task>
     <task id="LOCAL-00025" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464484508624</created>
       <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
       <updated>1464484508624</updated>
     </task>
     <task id="LOCAL-00026" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464484810094</created>
       <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
       <updated>1464484810094</updated>
     </task>
     <task id="LOCAL-00027" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464547639712</created>
       <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
       <updated>1464547639712</updated>
     </task>
     <task id="LOCAL-00028" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464615627148</created>
       <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
       <option name="project" value="LOCAL" />
       <updated>1464615627148</updated>
     </task>
     <task id="LOCAL-00029" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464615663334</created>
       <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
       <option name="project" value="LOCAL" />
       <updated>1464615663334</updated>
     </task>
     <task id="LOCAL-00030" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464615743008</created>
       <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
       <option name="project" value="LOCAL" />
       <updated>1464615743008</updated>
     </task>
     <task id="LOCAL-00031" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464628071378</created>
       <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
       <updated>1464628071378</updated>
     </task>
     <task id="LOCAL-00032" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464728380220</created>
       <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
       <option name="project" value="LOCAL" />
       <updated>1464728380220</updated>
     </task>
     <task id="LOCAL-00033" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464742936430</created>
       <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
       <option name="project" value="LOCAL" />
       <updated>1464742936430</updated>
     </task>
     <task id="LOCAL-00034" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464742949399</created>
       <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
       <option name="project" value="LOCAL" />
       <updated>1464742949399</updated>
     </task>
     <task id="LOCAL-00035" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464742968589</created>
       <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
       <option name="project" value="LOCAL" />
       <updated>1464742968589</updated>
     </task>
     <task id="LOCAL-00036" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464742990660</created>
       <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
       <option name="project" value="LOCAL" />
       <updated>1464742990660</updated>
     </task>
     <task id="LOCAL-00037" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464790807220</created>
       <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
       <option name="project" value="LOCAL" />
       <updated>1464790807220</updated>
     </task>
     <task id="LOCAL-00038" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464790878475</created>
       <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
       <option name="project" value="LOCAL" />
       <updated>1464790878475</updated>
     </task>
     <task id="LOCAL-00039" summary="Initial commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464791110614</created>
       <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
       <option name="project" value="LOCAL" />
       <updated>1464791110614</updated>
     </task>
     <task id="LOCAL-00040" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464824747366</created>
       <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
       <option name="project" value="LOCAL" />
       <updated>1464824747366</updated>
     </task>
     <task id="LOCAL-00041" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464824865924</created>
       <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
       <option name="project" value="LOCAL" />
       <updated>1464824865924</updated>
     </task>
     <task id="LOCAL-00042" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464867124818</created>
       <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
       <option name="project" value="LOCAL" />
       <updated>1464867124818</updated>
     </task>
     <task id="LOCAL-00043" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464867138243</created>
       <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
       <option name="project" value="LOCAL" />
       <updated>1464867138243</updated>
     </task>
     <task id="LOCAL-00044" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464868214255</created>
       <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
       <option name="project" value="LOCAL" />
       <updated>1464868214255</updated>
     </task>
     <task id="LOCAL-00045" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464868763838</created>
       <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
       <option name="project" value="LOCAL" />
       <updated>1464868763838</updated>
     </task>
     <task id="LOCAL-00046" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464868889201</created>
       <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
       <option name="project" value="LOCAL" />
       <updated>1464868889201</updated>
     </task>
     <task id="LOCAL-00047" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464868906337</created>
       <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
       <option name="project" value="LOCAL" />
       <updated>1464868906337</updated>
     </task>
     <task id="LOCAL-00048" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464869010835</created>
       <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
       <option name="project" value="LOCAL" />
       <updated>1464869010835</updated>
     </task>
     <task id="LOCAL-00049" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464869289942</created>
       <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
       <option name="project" value="LOCAL" />
       <updated>1464869289942</updated>
     </task>
     <task id="LOCAL-00050" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464870714071</created>
       <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
       <option name="project" value="LOCAL" />
       <updated>1464870714072</updated>
     </task>
     <task id="LOCAL-00051" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464872878496</created>
       <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
       <option name="project" value="LOCAL" />
       <updated>1464872878496</updated>
     </task>
     <task id="LOCAL-00052" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464872945182</created>
       <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
       <option name="project" value="LOCAL" />
       <updated>1464872945182</updated>
     </task>
     <task id="LOCAL-00053" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464957092071</created>
       <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
       <option name="project" value="LOCAL" />
       <updated>1464957092072</updated>
     </task>
     <task id="LOCAL-00054" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1464957141661</created>
       <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
       <option name="project" value="LOCAL" />
       <updated>1464957141661</updated>
     </task>
     <task id="LOCAL-00055" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1465124014834</created>
       <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
       <option name="project" value="LOCAL" />
       <updated>1465124014834</updated>
     </task>
     <task id="LOCAL-00056" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1465217310430</created>
       <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
       <option name="project" value="LOCAL" />
       <updated>1465217310430</updated>
     </task>
     <task id="LOCAL-00057" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1465217735383</created>
       <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
       <option name="project" value="LOCAL" />
       <updated>1465217735383</updated>
     </task>
     <task id="LOCAL-00058" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
       <created>1465217951797</created>
       <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
       <option name="project" value="LOCAL" />
       <updated>1465217951797</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
+      <created>1465221453493</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1465221453494</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
+      <created>1465221881749</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1465221881749</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
+      <created>1465571328230</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1465571328231</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
+      <created>1465571370282</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1465571370283</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Commit&#10;&#10;(cherry picked from commit f31445518270398e2770a4391b1327ca1b15d920)&#10;">
+      <created>1478532117494</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1478532117495</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1523,7 +1488,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="629990000" />
+    <option name="totallyTimeSpent" value="646690000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1535,26 +1500,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22494432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32768363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30992195" sideWeight="0.5021322" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3199554" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30992195" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30734465" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31864408" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26448497" sideWeight="0.49496403" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24759872" sideWeight="0.49496403" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1443133" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17477204" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09925293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22068231" sideWeight="0.505036" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.483835" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22068231" sideWeight="0.505036" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1591,8 +1562,29 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46153846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
   <component name="Vcs.Log.Settings">
     <option name="SHOW_BRANCHES_PANEL" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="SHOW_DETAILS" value="false" />
@@ -1668,10 +1660,30 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/passwordProtector/Main.java</url>
+          <line>40</line>
+          <properties field="primaryStage" class="passwordProtector.Main" />
+          <option name="timeStamp" value="1774" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/passwordProtector/Main.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="1775" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/passwordProtector/Main.java</url>
+          <line>139</line>
+          <properties />
+          <option name="timeStamp" value="1776" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="1774" />
+      <option name="time" value="1777" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1694,212 +1706,132 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/libraries/sqlite_jdbc4_3_8_2_SNAPSHOT.xml">
+    <entry file="file://$PROJECT_DIR$/passwords.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/AddDataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6474576">
-          <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/Dispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02881356">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/PasswordHash.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16949153">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/passwords.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/KeyWord.java">
+    <entry file="file://$PROJECT_DIR$/passwords.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passwords.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passwords.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passwords.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="9" column="53" lean-forward="false" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passwords.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passwords.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passwords.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passwords.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passwords.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/DataChangeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+        <state relative-caret-position="0">
+          <caret line="67" column="26" lean-forward="false" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/application/Platform.java">
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/VerificationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/passwordProtector/view/SignUpDialog.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/scene/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1990795">
-          <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/passwordProtector/view/MainVBox.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="118" selection-start-line="19" selection-start-column="118" selection-end-line="19" selection-end-column="118" />
+        <state relative-caret-position="0">
+          <caret line="19" column="118" lean-forward="false" selection-start-line="19" selection-start-column="118" selection-end-line="19" selection-end-column="118" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/animation/ScaleTransition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="476" column="11" selection-start-line="476" selection-start-column="11" selection-end-line="476" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/animation/KeyValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0964467">
-          <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/animation/Animation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="866" column="16" selection-start-line="866" selection-start-column="16" selection-end-line="866" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/animation/Timeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59770113">
-          <caret line="66" column="29" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/animation/AnimationTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="104" column="19" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/com/sun/scenario/animation/NumberTangentInterpolator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7011494">
-          <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/animation/KeyFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="223" column="11" selection-start-line="223" selection-start-column="11" selection-end-line="223" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/beans/binding/DoubleExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/animation/Interpolator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="198" column="25" selection-start-line="198" selection-start-column="25" selection-end-line="198" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/com/sun/scenario/animation/SplineInterpolator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="44" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="1785" column="0" selection-start-line="1785" selection-start-column="0" selection-end-line="1785" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/css/caspian.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4518" column="48" selection-start-line="4518" selection-start-column="48" selection-end-line="4518" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/scene/paint/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2318105">
-          <caret line="382" column="24" selection-start-line="382" selection-start-column="24" selection-end-line="382" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/scene/paint/Paint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8747885">
-          <caret line="126" column="29" selection-start-line="126" selection-start-column="29" selection-end-line="126" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/scene/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7394247">
-          <caret line="1604" column="22" selection-start-line="1604" selection-start-column="22" selection-end-line="1604" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/Helper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/passwordProtector/view/VerificationDialog.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7241379">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1908,192 +1840,251 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/passwordProtector/view/OptionsDialog.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1575985">
-          <caret line="63" column="68" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
+        <state relative-caret-position="0">
+          <caret line="63" column="68" lean-forward="false" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/com/sun/javafx/scene/control/behavior/TextFieldBehavior.java">
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/AESDecryption.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="169" column="16" selection-start-line="169" selection-start-column="16" selection-end-line="169" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/com/sun/javafx/scene/control/skin/TextInputControlSkin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="379" column="0" selection-start-line="379" selection-start-column="0" selection-end-line="379" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/scene/control/SkinBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/com/sun/javafx/scene/control/skin/BehaviorSkinBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/com/sun/javafx/scene/control/skin/TextFieldSkin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.022988506">
-          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/experiments/Spinning.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.856176">
-          <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/VerificationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29919448">
-          <caret line="188" column="30" selection-start-line="188" selection-start-column="30" selection-end-line="188" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/CustomSkin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81933254">
-          <caret line="157" column="5" selection-start-line="2" selection-start-column="0" selection-end-line="157" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/CustomTextField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.046029918">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.472103">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.0">
-            <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-            <folding />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="0">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/scene/input/MouseEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/css/caspian.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="141" column="71" selection-start-line="141" selection-start-column="71" selection-end-line="141" selection-end-column="71" />
+        <state relative-caret-position="0">
+          <caret line="4508" column="50" lean-forward="false" selection-start-line="4508" selection-start-column="50" selection-end-line="4508" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/DBHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/experiments/Spinning.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="75" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="75" />
-          <folding>
-            <marker date="1464790941307" expanded="true" signature="6496:6619" placeholder="SELECT users... users" />
-            <marker date="1464790941307" expanded="true" signature="7632:7767" placeholder="SELECT users... locations" />
-            <marker date="1464790941307" expanded="true" signature="8545:8811" placeholder="SELECT users... users" />
-            <marker date="1464790941307" expanded="true" signature="8758:8810" placeholder="SELECT locat... locations" />
-            <marker date="1464790941307" expanded="true" signature="9728:9773" placeholder="SELECT usern... users" />
-            <marker date="1464790941307" expanded="true" signature="10514:10569" placeholder="SELECT usern... users" />
-            <marker date="1464790941307" expanded="true" signature="11370:11412" placeholder="SELECT salt users" />
-            <marker date="1464790941307" expanded="true" signature="14909:14956" placeholder="UPDATE users... " />
-            <marker date="1464790941307" expanded="true" signature="15024:15072" placeholder="UPDATE other... " />
-            <marker date="1464790941307" expanded="true" signature="17132:17243" placeholder="SELECT COUNT... users" />
-            <marker date="1464790941307" expanded="true" signature="17190:17242" placeholder="SELECT locat... locations" />
-            <marker date="1464790941307" expanded="true" signature="17556:17596" placeholder="DELETE FROM " />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/experiments/ParallelTransitionApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="235" column="24" selection-start-line="235" selection-start-column="24" selection-end-line="235" selection-end-column="44" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="95" column="77" lean-forward="false" selection-start-line="95" selection-start-column="76" selection-end-line="95" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataModel/CustomTreeCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/passwordProtector/Notification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="136" column="5" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="131" column="79" lean-forward="false" selection-start-line="131" selection-start-column="75" selection-end-line="131" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/passwordProtector/Icons.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        <state relative-caret-position="0">
+          <caret line="73" column="17" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/Helper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/AlertDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/PasswordHash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="15" column="69" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/KeyWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/EventExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/EncryptionTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/Dispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="66" column="16" lean-forward="false" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/DecryptionTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/DBUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/AESEncryption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="18" column="116" lean-forward="false" selection-start-line="18" selection-start-column="116" selection-end-line="18" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataModel/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataModel/TreeViewWithItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/SignUpFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/Popover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="78" column="23" lean-forward="false" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/DataChangeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="87" column="67" lean-forward="false" selection-start-line="87" selection-start-column="65" selection-end-line="87" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/AddDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/CustomSkin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/CustomTextField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/VerificationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="188" column="30" lean-forward="false" selection-start-line="188" selection-start-column="30" selection-end-line="188" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/javafx-src.zip!/javafx/beans/property/Property.java" />
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="745" column="0" lean-forward="false" selection-start-line="745" selection-start-column="0" selection-end-line="745" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/passwordProtector/StageComposer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="72" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
+        <state relative-caret-position="193">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/controllers/Popover.java">
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/DBHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.448276">
-          <caret line="38" column="81" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
+        <state relative-caret-position="20">
+          <caret line="472" column="66" lean-forward="false" selection-start-line="472" selection-start-column="60" selection-end-line="472" selection-end-column="66" />
+          <folding>
+            <marker date="1464790941307" expanded="true" signature="17132:17243" ph="SELECT COUNT... users" />
+            <marker date="1464790941307" expanded="true" signature="17190:17242" ph="SELECT locat... locations" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/passwordProtector/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/AlertDialog.java">
+    <entry file="file://$PROJECT_DIR$/passwords.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="72" selection-start-line="85" selection-start-column="72" selection-end-line="85" selection-end-column="72" />
+        <state relative-caret-position="300">
+          <caret line="144" column="83" lean-forward="false" selection-start-line="144" selection-start-column="83" selection-end-line="144" selection-end-column="83" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/AESDecryption.java">
+    <entry file="file://$PROJECT_DIR$/passwords.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/passwordProtector/dataProcessing/AESEncryption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6954315">
-          <caret line="39" column="17" selection-start-line="38" selection-start-column="23" selection-end-line="39" selection-end-column="17" />
+        <state relative-caret-position="360">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
